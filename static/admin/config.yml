@@ -1,7 +1,7 @@
 backend:
   backend:
 +  name: github
-+  repo: your-username/your-repo-name
++  repo: nmguni/personal-blog
 
 media_folder: static/assets
 public_folder: assets
