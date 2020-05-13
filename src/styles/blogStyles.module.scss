@@ -1,0 +1,24 @@
+.title {
+  color: #353535;
+  box-shadow: none;
+  letter-spacing: 0.95px;
+  padding: 0.5rem;
+  &:hover {
+    color: hsla(0, 0%, 0%, 0.66);
+  }
+}
+
+.content {
+  color: hsla(0, 0%, 0%, 0.66);
+  padding: 0.5rem;
+}
+
+.description {
+  color: hsla(0, 0%, 0%, 0.66);
+  padding: 0.5rem;
+  border-bottom: 2px solid #353535;
+}
+
+.greating {
+  color: #353535;
+}

@@ -18,13 +18,16 @@ class Layout extends React.Component {
             ...scale(1.5),
             marginBottom: rhythm(1.5),
             marginTop: 0,
+            backgroundColor: "#fcffa4",
+            display: "inline-block",
+            padding: ".2rem .5rem",
           }}
         >
           <Link
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
-              color: `inherit`,
+              color: `#353535`,
             }}
             to={location.pathname === blogPath ? `/blog/` : `/`}
           >
@@ -38,13 +41,14 @@ class Layout extends React.Component {
           style={{
             fontFamily: `Montserrat, sans-serif`,
             marginTop: 0,
+            color: `#353535`,
           }}
         >
           <Link
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
-              color: `inherit`,
+              color: `#353535`,
             }}
             to={`/blog/`}
           >
@@ -59,7 +63,7 @@ class Layout extends React.Component {
           style={{
             marginLeft: `auto`,
             marginRight: `auto`,
-            maxWidth: rhythm(24),
+            maxWidth: rhythm(25),
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
           }}
         >
