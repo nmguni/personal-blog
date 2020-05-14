@@ -1,6 +1,6 @@
-  backend:
-   name: github
-   repo: nmguni/personal-blog
+backend:
+  name: github
+  repo: nmguni/personal-blog
 
 media_folder: static/assets
 public_folder: assets
