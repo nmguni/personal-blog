@@ -22,3 +22,20 @@
 .greating {
   color: #353535;
 }
+
+.footer {
+  color: rgb(53, 53, 53);
+}
+
+.footerLinks {
+  color: #fff;
+  text-decoration: none !important;
+  margin: 0 0.5rem;
+  border: solid;
+  padding: 0.2rem;
+  background-color: #364f6b96;
+  border-radius: 20%;
+  &:hover {
+    background-color: #364f6b;
+  }
+}

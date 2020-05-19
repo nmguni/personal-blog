@@ -1,8 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-
+import blogStyles from "../styles/blogStyles.module.scss"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { rhythm, scale } from "../utils/typography"
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
+import { faTwitter } from "@fortawesome/free-brands-svg-icons"
+import { faGit } from "@fortawesome/free-brands-svg-icons"
+// import { faenvelope } from "@fortawesome/free-brands-svg-icons"
 
 class Layout extends React.Component {
   render() {
@@ -70,10 +75,53 @@ class Layout extends React.Component {
           <header>{header}</header>
           <main>{children}</main>
         </div>
-        <Footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <Footer className={blogStyles.footer}>
+          {new Date().getFullYear()} | Ndumso Mguni |{` `}
+          <a
+            href="https://www.linkedin.com/in/ndumiso-mguni-121b7b164/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={blogStyles.footerLinks}
+          >
+            {" "}
+            <FontAwesomeIcon
+              icon={faLinkedinIn}
+              className="icon-class"
+              size="lg"
+            />
+          </a>
+          <a
+            href="https://twitter.com/Ndumiso_29"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={blogStyles.footerLinks}
+          >
+            <FontAwesomeIcon
+              icon={faTwitter}
+              className="icon-class"
+              size="lg"
+            />
+          </a>
+          {/* <a
+            href="mailto: ndumiso29@gmail.com "
+            target="_blank"
+            rel="noopener noreferrer"
+            className={blogStyles.footerLinks}
+          >
+            <FontAwesomeIcon
+              icon={faenvelope}
+              className="icon-class"
+              size="lg"
+            />
+          </a> */}
+          <a
+            href="https://github.com/nmguni"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={blogStyles.footerLinks}
+          >
+            <FontAwesomeIcon icon={faGit} className="icon-class" size="lg" />
+          </a>
         </Footer>
       </Wrapper>
     )
