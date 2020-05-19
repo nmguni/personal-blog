@@ -3,7 +3,7 @@ module.exports = {
     // edit below
     title: `Blog`,
     author: `Ndumiso Mguni`,
-    description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
+    description: `My Personal Blog`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
       twitter: `Ndumiso_29`,
@@ -71,14 +71,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Personal Blog`,
+        short_name: `Blog`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
         // edit below
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/blog-icon.png`,
       },
     },
     {
