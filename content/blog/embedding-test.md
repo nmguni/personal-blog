@@ -1,5 +1,5 @@
 ---
-path: test
+path: another-test
 date: 2020-05-20T20:54:49.934Z
 title: "embedding test "
 description: rud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -8,9 +8,7 @@ description: rud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 ---
 this is code 
 
-<script src="https://gist.github.com/nmguni/23dbb4f48d93bace5962d094e8fe2242.js"></script>
-
-### **this is more code** 
+### **this is more code**
 
 ```js//
 function largestNum(arr){
