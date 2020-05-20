@@ -15,13 +15,17 @@ Then I will get into more complex topics: ES6, OOP, Promises, Asynchronous JavaS
 
 <!--StartFragment-->
 
-### This post will focus on the following:
+**This post will focus on the following:**
 
-1. **Variables**
-2. **Constants**
-3. **Primitive types**
-4. **Dynamic typing**
-5. **Operators**
+***Variables***
+
+***Constants***
+
+***Primitive types***
+
+***Dynamic typing***
+
+***Operators***
 
 <!--EndFragment-->
 
@@ -35,13 +39,13 @@ We use variables to store data in a computer's memory. We give that memory locat
 
 Think of variables as containers or boxes used for organization, to easily find whats packed away your boxes will have to be labeled. What we put inside the box is the value(data) of the variable and what we label the box is the name of our variable.
 
- *Variables cannot be a reserved keyword*  
+ ***Variables cannot be a reserved keyword***  
 
-*Variable names should be descriptive* 
+***Variable names should be descriptive*** 
 
-*Variables cannot start with a number* 
+***Variables cannot start with a number*** 
 
-*Variables cannot contain space of hyphen*
+***Variables cannot contain space of hyphen***
 
 `var` was the most commonly used variable declaration before ES6, there are some issues with `var` and those will be addressed later on. From ES6 onward the best practice is to use `let` to declare variables.
 
@@ -74,7 +78,6 @@ console.log(name)
 <!--StartFragment-->
 
 - - -
-
 ## **Constance**
 
 With `let` you can change the value throughout the program
