@@ -17,11 +17,11 @@ Then I will get into more complex topics: ES6, OOP, Promises, Asynchronous JavaS
 
 ##### This post will focus on the following:
 
-1. **Variables**
-2. **Constants**
-3. **Primitive types**
-4. **Dynamic typing**
-5. **Operators**
+   1. **Variables**
+   2. **Constants**
+   3. **Primitive types**
+   4. **Dynamic typing**
+   5. **Operators**
 
 <!--EndFragment-->
 
@@ -35,12 +35,15 @@ We use variables to store data in a computer's memory. We give that memory locat
 
 Think of variables as containers or boxes used for organization, to easily find whats packed away your boxes will have to be labeled. What we put inside the box is the value(data) of the variable and what we label the box is the name of our variable.
 
-* Variables cannot be a reserved keyword 
-* Variable names should be descriptive
-* Variables cannot start with a number
-* Variables cannot contain space of hyphen
+ *Variables cannot be a reserved keyword* 
 
-`var `was the most commonly used variable declaration before ES6, there are some issues with `var` and those will be addressed later on. From ES6 onward the best practice is to use `let`to declare variables.
+*Variable names should be descriptive*
+
+*Variables cannot start with a number*
+
+*Variables cannot contain space of hyphen*
+
+`var`was the most commonly used variable declaration before ES6, there are some issues with `var` and those will be addressed later on. From ES6 onward the best practice is to use `let`to declare variables.
 
 <!--EndFragment-->
 
@@ -48,41 +51,46 @@ Think of variables as containers or boxes used for organization, to easily find 
 
 ##### Structure of a declaration
 
-```js
 Declaration Variable name = value;
 
+```js
 let name;
-console.log(name) // undefined - by default variables are undefined
+console.log(name) 
+// undefined - by default variables are undefined
 ```
 
 We can initialize this variable a name 'James' that is a string
 
-`let name = 'James' `\
-`console.log(name) // James`
+```js
+let name = 'James'
+console.log(name) 
+// James
+```
 
 <!--EndFragment-->
 
 <!--StartFragment-->
 
+---
+
 ## **Constance**
 
 With `let` you can change the value throughout the program
 
-`let name = 'James'`
-
-`name = 'Mike'`
-
-`console.log(name) // Mike`
+```js
+let name = 'James'
+name = 'Mike'
+console.log(name) // Mike`
+```
 
 If you want to store a value in a variable and intend for that value not to change throughout the program we use the declaration `const`
 
-`const name = 'James'`
-
-`name = 'Mike'`
-
-`console.log(name)//  TypeError: assignment to constant variable`
-
-
+```js
+const name = 'James'
+name = 'Mike'
+console.log(name)
+// TypeError: assignment to constant variable
+```
 
 **We cannot reassign a constant**
 
