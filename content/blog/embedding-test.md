@@ -10,7 +10,7 @@ this is code
 
 ### **this is more code**
 
-```js//
+```js
 function largestNum(arr){
   //  largest array created to hold the four sub arrays
     let largest = [0,0,0,0];
