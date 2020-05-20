@@ -5,7 +5,7 @@ title: JavaScript Fundamentals
 description: "Let us take a step back from all the Frameworks and let's have a
   JavaScript refresher to strengthen our foundation! "
 ---
-#### Hello Welcome to the first post of my JavaScript series!
+## Hello Welcome to the first post of my JavaScript series!
 
 I'm writing this blog to go back to basics and strengthen my knowledge of JavaScript. This will be a really good refresher for more advanced Devs and a good place to start for beginners. 
 
@@ -15,7 +15,7 @@ Then I will get into more complex topics: ES6, OOP, Promises, Asynchronous JavaS
 
 <!--StartFragment-->
 
-#### This post will focus on the following:
+### This post will focus on the following:
 
 1. **Variables**
 2. **Constants**
@@ -35,9 +35,12 @@ We use variables to store data in a computer's memory. We give that memory locat
 
 Think of variables as containers or boxes used for organization, to easily find whats packed away your boxes will have to be labeled. What we put inside the box is the value(data) of the variable and what we label the box is the name of our variable.
 
- *Variables cannot be a reserved keyword* \
-*Variable names should be descriptive*\
-*Variables cannot start with a number*\
+ *Variables cannot be a reserved keyword*  
+
+*Variable names should be descriptive* 
+
+*Variables cannot start with a number* 
+
 *Variables cannot contain space of hyphen*
 
 `var` was the most commonly used variable declaration before ES6, there are some issues with `var` and those will be addressed later on. From ES6 onward the best practice is to use `let` to declare variables.
@@ -46,7 +49,7 @@ Think of variables as containers or boxes used for organization, to easily find 
 
 <!--StartFragment-->
 
-#### Structure of a declaration
+### Structure of a declaration
 
 ```js
 // Declaration Variable name = value;
