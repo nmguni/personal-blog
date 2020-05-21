@@ -29,13 +29,10 @@ We use variables to store data in a computer's memory. We give that memory locat
 
 Think of variables as containers or boxes used for organization, to easily find whats packed away your boxes will have to be labeled. What we put inside the box is the value(data) of the variable and what we label the box is the name of our variable.
 
-#### ***Variables cannot be a reserved keyword***
-
-#### ***Variable names should be descriptive***
-
-#### ***Variables cannot start with a number***
-
-#### ***Variables cannot contain space of hyphen***
+#### ***Variables cannot be a reserved keyword***\
+***Variable names should be descriptive***\
+***Variables cannot start with a number***\
+***Variables cannot contain space of hyphen***
 
 `var` was the most commonly used variable declaration before ES6, there are some issues with `var` and those will be addressed later on. From ES6 onward the best practice is to use `let` to declare variables.
 
@@ -66,8 +63,6 @@ console.log(name)
 <!--EndFragment-->
 
 <!--StartFragment-->
-
-- - -
 
 ## **Constance**
 
@@ -257,7 +252,7 @@ The basic assignment operator is equal (=):
 
 ## logical Operators
 
-`(!)` The NOT operator  negates a boolean value. The` (!!) `converts a value into its real boolean value.
+`(!)` The NOT operator  negates a boolean value. The`(!!)`converts a value into its real boolean value.
 
 `(&&)` The AND operator is applied to two Boolean values and returns true if both values are true.
 
