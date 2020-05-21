@@ -1,7 +1,7 @@
 ---
 path: javascript-control-flow
 date: 2020-05-21T13:02:49.138Z
-title: "JavaScript Control Flow Pt: 2"
+title: "JavaScript Basics: Control Flow "
 description: Control flow is the order in which statements are executed in a program...
 ---
 <!--StartFragment-->
