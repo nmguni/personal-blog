@@ -11,9 +11,10 @@ The JavaScript string Primitive type. JavaScript strings are also immutable. It 
 
 In fundamentals we learned what strings are, here is a quick refresher of a string literal.
 
-`let str ='Hi';`
-
+`let str ='Hi';`\
 `let greeting ="Hello";`
+
+## Template literals
 
 In ES6 we can define strings with backticks ``(`)`` called template literals. They enable you to solve more complex problems, ES6 template literals provide the syntax that allows you to work with strings in a safer and cleaner way.
 
@@ -27,27 +28,28 @@ You can use multi-line strings and string interpolation features with them.
 
 let name = 'John'; 
 let message `Hello ${name}`; 
-console.log(greeting); // 
-Hello John
+console.log(greeting); // Hello John
 ```
 
 ## Escaping special characters
 
-To escape special characters, you use the backslash `\` character.  The following example uses the backslash character to escape the single quote character in a string: 	`let str = 'I'm a string!';`
+To escape special characters, you use the backslash `\` character.  The following example uses the backslash character to escape the single quote character in a string: 	
+
+`let str = 'I'm a string!';`
 
 ## Accessing characters
 
 To access the characters in a string, you use the array-like `[]` notation with the zero-based index.
 
 ```js
-let str = "Hello";\
+let str = "Hello";
 console.log(str\[0]); // "H" 
 ```
 
 To access the last character of the string, you use the length - 1 index:
 
 ```js
-let str = "Hello"; \
+let str = "Hello"; 
 console.log(str\[str.length -1]); // "o"
 ```
 
@@ -74,11 +76,13 @@ console.log(result); // true
 
 To get the primitive string value, you use one of the following methods of the string object: `valueOf(),` `toString()`, and `toLocaleString()`.
 
+```js
 console.log(str.valueOf ());
 
 console.log(str.toString ());
 
 console.log(str.toLocaleString());
+```
 
 ## String manipulation
 
@@ -120,10 +124,11 @@ Note that the `trim()` method creates a copy of the original string with whit
 
 ES6 introduced two new methods for removing whitespace characters from a string:
 
-* `trimStart()` returns a string with whitespace characters stripped from the beginning of a string.
-* `trimEnd()`returns a string with the whitespace characters stripped from the end of a string.
+`trimStart()` returns a string with whitespace characters stripped from the beginning of a string.
 
-## `slice()` Method
+`trimEnd()`returns a string with the whitespace characters stripped from the end of a string.
+
+## slice() Method
 
 The `slice()` method returns a substr from the `startIndex`to the `endIndex`in the str:
 
@@ -149,7 +154,7 @@ let localPart = email.slice(0,email.indexOf('@'));
 console.log(localPart); // John
 ```
 
-## `split()` Method
+## split() Method
 
 The `String.prototype.split()` divides a string into an array of substrings: 
 
@@ -171,7 +176,7 @@ If the limit is zero, the `split()` returns an empty array. If the limit is 
 
 Splitting the strings into words example.The following example uses the `split()` method to split the string into words
 
-```
+```js
 let str = 'JavaScript String split()'; 
 let substrings = str.split(' ');  
 console.log(substrings);
@@ -182,7 +187,7 @@ Returning a limited number of substrings example
 
 The following example uses the split() method to divide a string into substrings using the space separator. It also uses the second parameter to limit the number of substrings to two:
 
-```
+```js
 let str = 'JavaScript String split()'; 
 let substrings = str.split(' ',2);  
 console.log(substrings);
@@ -194,6 +199,6 @@ console.log(substrings);
 * Use the JavaScript String `split()` to divide a string into an array of substrings by a specified separator.
 * Use the second parameter `(limit)` to return a limited number of splits.
 * JavaScript strings are primitive values and immutable.
-* Literal strings are delimited by single quotes `(')`, double quotes` (")`, or backticks ``(`)``
+* Literal strings are delimited by single quotes `(')`, double quotes`(")`, or backticks ``(`)``
 * The length property returns the length of the string.
 * Use the `>, >=, <, <=, ==` operators to compare two strings.
