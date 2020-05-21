@@ -154,7 +154,7 @@ let firstName = undefined; // explicitly set to undefined not common
 
 `let firstName = null;`  Used when we want assign a variable later we it is good practise to assign it null
 
-**[symbols (ES6)](https://developer.mozilla.org/en-US/docs/Glossary/Symbol)**
+### **symbols (ES6)**
 
 Does not have a literal form. To create a symbol you call the function
 
@@ -224,55 +224,45 @@ prefix / postfix decrements (--) – subtract one from its operand.
 
 The basic assignment operator is equal (=):
 
-| Operator | Meaning | Description |
-| -------- | ------- | ----------- |
+| Operator | Meaning     | Description                                      |
+| -------- | ----------- | ------------------------------------------------ |
+| a = b    | a = b       | Assigns the value of b to a.                     |
+| a += b   | a = a + b   | Assigns the result of a plus b to a.             |
+| a -= b   | a = a - b   | Assigns the result of a minus b to a.            |
+| a *= b   | a = a*  b   | Assigns the result of a times b to a.            |
+| a /= b   | a = a / b   | Assigns the result of a divided by b to a.       |
+| a %= b   | a = a / b   | Assigns the result of a modulo b to a.           |
+| a &=b    | a = a % b   | Assigns the result of a AND b to a.              |
+| a=b      | a = a & b   | Assigns the result of a OR b to a.               |
+| a ^=b    | a =a ^ b    | Assigns the result of a XOR b to a.              |
+| a <<= b  | a = a << b  | Assigns the result of a shifted left by b to a.  |
+| a >>= b  | a = a >> b  | Assigns the result of a shifted right by b to a. |
+| a >>>= b | a = a >>> b | Assigns the result of a shifted right by b to a. |
 
-\|a = b           |a = b          |Assigns the value of b to a.
-                    |
-|a += b
-         |a = a + b      |Assigns the result of a plus b to a.\
-| |a -= b         |a = a - b      |Assigns the result of a minus b to a.\
-| |a *\= b         |a = a*  b      |Assigns the result of a times b to a.\
-| |a /= b         |a = a / b      |Assigns the result of a divided by b to a.\
-| |a %= b
-         |a = a / b      |Assigns the result of a modulo b to a.\
-| |a &=b          |a = a % b      |Assigns the result of a AND b to a.\
-| |a |=b          |a = a & b      |Assigns the result of a OR b to a.
-              |
-|a ^=b          |a =a ^ b       |Assigns the result of a XOR b to a.\
-| |a <<= b        |a = a << b     |Assigns the result of a shifted left by b to a. 
-|
-|a >>= b
-        |a = a >> b     |Assigns the result of a shifted right by b to a.
-|
-|a >>>= b       |a = a >>> b    |Assigns the result of a shifted right by b to a.|      
+## Comparison operators
 
+<!--StartFragment-->
 
+| <   | Less than                |
+| --- | ------------------------ |
+| \>  | Greater than             |
+| <=  | Less than or equal to    |
+| \>= | Greater than or equal to |
+| \== | Equal to                 |
+| !=  | Not equal to             |
 
-## Comparison operators 
+<!--EndFragment-->
 
-| Tables | Are |
-| ------ | --- |
-| <      |     |
+<!--EndFragment-->
 
-less than                 |
-|>              |
-greater than             |\
-|<=             | less than or equal to    |
-|>=             |
-greater than or equal to |
-|==             |
-equal to                 |
-|!=             |not equal to             |
+## logical Operators
 
-## logical Operators 
+`(!)` The NOT operator  negates a boolean value. The` (!!) `converts a value into its real boolean value.
 
-* The NOT operator (!) negates a boolean value. The (!!) converts a value into its real boolean value.
-* The AND operator (&&) is applied to two Boolean values and returns true if both values are true.
-* The OR operator (||) is applied to two Boolean values and returns true if one of the operands is true.
-* Both && and || operator are short-circuited. They cab be also applied to non-Boolean values.
-* The logical operator precedence from the highest to the lowest is !, && and ||.
+`(&&)` The AND operator is applied to two Boolean values and returns true if both values are true.
 
-1. Logical NOT (!)
-2. Logical AND (&&)
-3. Logical OR (||)
+`(||)` The OR operator is applied to two Boolean values and returns true if one of the operands is true.
+
+Both `&&` and `||` operator are short-circuited. They can be also applied to non-Boolean values.
+
+The logical operator precedence from the highest to the lowest is `!`, `&&` and `||`.
