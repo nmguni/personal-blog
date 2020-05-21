@@ -1,7 +1,7 @@
 ---
 path: javascript-control-flow
 date: 2020-05-21T13:02:49.138Z
-title: JavaScript Control Flow
+title: "JavaScript Control Flow Pt: 2"
 description: Control flow is the order in which statements are executed in a program...
 ---
 <!--StartFragment-->
@@ -98,9 +98,7 @@ switch(lan) {
 }
 ```
 
-Loops Used to repeat and actions  a number of times. If JavaScript we have various types of loops and they all do the same thing, they repeat an action a number of times. But there are differences to how they start  and end
-
-for  Used to repeat and actions  a number of times 
+Loops Used to repeat and actions  a number of times. If JavaScript we have various types of loops and they all do the same thing, they repeat an action a number of times. But there are differences to how they start  and end for used to repeat and actions  a number of times 
 
 ```js
 for
@@ -146,9 +144,9 @@ for(let i = 0; i < 5; i++) {
 
 **How it works.**
 
-* First, declare a variable  counter and initialize it to 1.
-* Second, display the value of counter in the Console window if counter is less than 5.
-* Third, increase the value of counter by one in each iteration of the loop.
+1. Declare a variable  counter and initialize it to 1.
+2. Display the value of counter in the Console window if counter is less than 5.
+3. Increase the value of counter by one in each iteration of the loop.
 
 **loop with condition** 
 
@@ -188,9 +186,9 @@ while (count < 10) {
 
 **How it works**
 
-* First, outside of the loop, the count variable is set to 1.
-* Second, before the first iteration begins, the while statement checks if count is less than 10 and execute the statements inside the loop body.
-* Third, in each iteration, the loop increments count by 2 and after 5 iterations, the condition count < 10 is no longer true, so the loop terminates.
+1. outside of the loop, the count variable is set to 1.
+2. Before the first iteration begins, the while statement checks if count is less than 10 and execute the statements inside the loop body.
+3. In each iteration, the loop increments count by 2 and after 5 iterations, the condition count < 10 is no longer true, so the loop terminates.
 
 ## do while
 
