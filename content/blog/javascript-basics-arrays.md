@@ -47,8 +47,7 @@ console.log(cars[2] // 'Ford'
 
 We can use the length property  to store the current number of elements is holds.
 
-```
-js
+```js
 console.log(cars.length) // 3
 ```
 
@@ -56,14 +55,13 @@ console.log(cars.length) // 3
 
 ### Adding to the beginning unsift()
 
-```
-js
+```js
 let cars = ['Honda', 'Toyota', 'Ford'];
 cars.unshift('') 
 // ['Tesla', 'Honda', 'Toyota', 'Ford']
 ```
 
-### Removing from the beginning `shift()`
+### Removing from the beginning shift()
 
 ```js
 let cars = ['Tesla','Honda', 'Toyota', 'Ford'];
@@ -72,7 +70,7 @@ console.log(cars)
 // ['Honda', 'Toyota', 'Ford' ];
 ```
 
-### Deleting using `splice()`
+### Deleting using splice()
 
 Allows you to add new elements to the middle of the array however you can use this method to delete and replace existing elements. `splice()` changes the original array and returns an array that contains the deleter elements.
 
@@ -93,7 +91,7 @@ Array.splice(position,num);
 
 **Position** - position of the first element to delete  num - the number of elements to delete.
 
-### Adding with `splice()`
+### Adding with splice()
 
 ```js
 Array.splice(position,0,new_element_1,new_element_2,...);
@@ -108,7 +106,7 @@ console.log(cars)
 // ["Tesla", "Honda", "Civic", "Tacoma", "Toyota", "Ford"]
 ```
 
-### Empty array with `Splice()`
+### Empty array with Splice()
 
 ```js
 let cars = ['Tesla','Honda', 'Toyota', 'Ford'];
@@ -125,11 +123,11 @@ Remove elements from an array and add them to another array.
 slice(start, stop);
 ```
 
-Start and stop parameters are optional  The start parameter determines the zero-based index at which to start extraction. If the start is undefined, `slice()` begins at 0.
+**Start** and **stop** parameters are optional  The start parameter determines the zero-based index at which to start extraction. If the start is undefined, `slice()` begins at 0.
 
  **Stop** parameter, as its name implies, is a zero-based index at which to end extraction. The `slice()` method extracts up to stop-1. It means that the `slice()` method doesn’t include the element at the stop position in the new array.
 
-If you omit the stop parameter, the `slice()` method will use the length of the array for the stop parameter.
+If you omit the **stop** parameter, the `slice()` method will use the length of the array for the stop parameter.
 
 The `slice()` returns a new array that contains the elements of the original array clone Array `slice().`
 
@@ -197,7 +195,7 @@ console.log(scores.indexOf(6)); // -1
 console.log(scores.indexOf(2)); // 1
 ```
 
-## `lastIndexOf()`
+## lastIndexOf()
 
 ```js
 Array.lastIndexOf(searchElement[, fromIndex = Array.length - 1])
