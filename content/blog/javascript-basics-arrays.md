@@ -32,7 +32,7 @@ let arrayName = [, , ,];
 
 ## Finding Elements
 
-arrays are numbered using a 0 based index. The first element starts a 0 then the second element is 1 and so on. We can use bracket notation to access the elements of an array.
+Arrays are numbered using a 0 based index. The first element starts a 0 then the second element is 1 and so on. We can use bracket notation to access the elements of an array.
 
 ```js
 // cars
@@ -45,16 +45,16 @@ console.log(cars[2] // 'Ford'
 
 ## Find Array size
 
-We can use the length property  to store the current number of elements is holds
+We can use the length property  to store the current number of elements is holds.
 
 ```
 js
 console.log(cars.length) // 3
 ```
 
-## Adding elements to an array  `unshift() splice() ush() `
+## Adding elements to an array
 
-### Adding to the beginning `unsift() `
+### Adding to the beginning unsift()
 
 ```
 js
@@ -63,23 +63,20 @@ cars.unshift('')
 // ['Tesla', 'Honda', 'Toyota', 'Ford']
 ```
 
-###  Removing from the beginning `shift() `
+### Removing from the beginning `shift()`
 
-```
-js
+```js
 let cars = ['Tesla','Honda', 'Toyota', 'Ford'];
 cars.shift()
 console.log(cars)
 // ['Honda', 'Toyota', 'Ford' ];
 ```
 
-### Deleting using `splice() `
+### Deleting using `splice()`
 
-Allows you to add new elements to the middle of the array however you can use this method to delete and replace existing elements.
-`splice()` changes the original array and returns an array that contains the deleter elements 
+Allows you to add new elements to the middle of the array however you can use this method to delete and replace existing elements. `splice()` changes the original array and returns an array that contains the deleter elements.
 
-```
-js
+```js
 let cars = ['Tesla','Honda', 'Toyota', 'Ford'];
 
 let deletedCars = cars.splice(0, 2)
@@ -90,26 +87,21 @@ console.log(cars)
 // ['Toyota', 'Ford'];
 ```
 
-```
-js
+```js
 Array.splice(position,num);
 ```
 
-**Position** - position of the first element to delete  num - the number of elements to delete
+**Position** - position of the first element to delete  num - the number of elements to delete.
 
-### Adding with `splice() `
+### Adding with `splice()`
 
-```
-js
+```js
 Array.splice(position,0,new_element_1,new_element_2,...);
 ```
 
-**Position** -   starting position in the array that the new elements will be inserted. The second argument is zero (0) that instructs the `splice()` method to not delete any elements.
-The third argument, fourth argument, and so on are the new elements that are inserted into the array.
-`splice()` does not remove any elements therefore it returns an empty array 
+**Position** -   starting position in the array that the new elements will be inserted. The second argument is zero (0) that instructs the `splice()` method to not delete any elements. The third argument, fourth argument, and so on are the new elements that are inserted into the array. `splice()` does not remove any elements therefore it returns an empty array.
 
-```
-js
+```js
 let cars = ['Tesla','Honda', 'Toyota', 'Ford'];
 cars.splice(2,0,'Civic','Tacoma')
 console.log(cars)
@@ -118,95 +110,86 @@ console.log(cars)
 
 ### Empty array with `Splice()`
 
-```
-js
+```js
 let cars = ['Tesla','Honda', 'Toyota', 'Ford'];
 cars.splice(0, cars.length)
 console.log(cars)
 // [ ];
 ```
 
-## Slice()  
+## Slice()
 
-Remove elements from an array and add them to another array
+Remove elements from an array and add them to another array.
 
-```
-js
+```js
 slice(start, stop);
 ```
 
 Start and stop parameters are optional  The start parameter determines the zero-based index at which to start extraction. If the start is undefined, `slice()` begins at 0.
 
- **Stop** parameter, as its name implies, is a zero-based index at which to end extraction. The `slice()` method extracts up to stop-1. It means that the `slice()` method doesn’t include the element at the stop position in the new array
+ **Stop** parameter, as its name implies, is a zero-based index at which to end extraction. The `slice()` method extracts up to stop-1. It means that the `slice()` method doesn’t include the element at the stop position in the new array.
 
 If you omit the stop parameter, the `slice()` method will use the length of the array for the stop parameter.
 
-The `slice()` returns a new array that contains the elements of the original array clone Array `slice()` 
+The `slice()` returns a new array that contains the elements of the original array clone Array `slice().`
 
-```
-js
+```js
 let cars = ['Tesla','Honda', 'Toyota', 'Ford'];
 let carsClone = cars.slice();
 console.log(newCars)
 // ["Tesla", "Honda", "Toyota", "Ford"]
 ```
 
-### Copy a portion using `slice()`
+### Copy a portion using slice()
 
-```
-js
+```js
 let cars = ['Tesla','Honda', 'Toyota', 'Ford'];
 let carsCopy = cars.slice(0, 3);
 console.log(newCars)
 // ["Tesla", "Honda", "Toyota"]
 ```
 
-## Adding to the end `push() `
+## Adding to the end push()
 
-Adds elements to the end of an array
+Adds elements to the end of an array.
 
-```
-js
+```js
 let cars = ['Tesla','Honda', 'Toyota', 'Ford'];
 cars.push('Volvo')
 console.log(cars)
 // ['Tesla','Honda', 'Toyota', 'Ford', 'Volvo'];
 ```
 
-## Removing from the end `pop() `
+## Removing from the end pop()
 
-```
-js
+```js
 let cars = ['Tesla','Honda', 'Toyota', 'Ford'];
 cars.pop()
 console.log(cars)
 // ['Tesla','Honda', 'Toyota', ];
 ```
 
-### Empty an array with `pop()` 
+### Empty an array with pop()
 
-```
-js
+```js
 while( num2.length > 0 ) num2.pop()
 ```
 
-## Locate elements in an array `index()` `lastIndexOf()`
+## Locate elements in an array index() lastIndexOf()
 
-`indexOf()` Finds position of an element in an array. Returns the first index of the occurrence or it returns -1 if the element is not found 
+`indexOf()` Finds position of an element in an array. Returns the first index of the occurrence or it returns -1 if the element is not found.
 
-```
-js
+```js
 Array.indexOf(searchElement, fromIndex)
 ```
 
 **searchElement** -  element that you want to find in the array.  fromIndex - array index at which the function starts the search.
 
-omit the fromIndex argument, the `indexOf()` method starts searching from the beginning of the string.
+If you omit the **fromIndex** argument, the `indexOf()` method starts searching from the beginning of the string.
 
-`indexOf()` method uses the strict equality comparison algorithm that is similar to the triple-equals operator **(===)** when comparing the **searchElement** with the elements in the array
+`indexOf()` method uses the strict equality comparison algorithm that is similar to the triple-equals operator **(===)** when comparing the **searchElement** with the elements in the array.
 
-```
-js
+```js
 var foo = [1, 2, 3, 4, 5, 7];
 console.log(scores.indexOf(1)); // 0
 console.log(scores.indexOf(3)); // 2
@@ -214,10 +197,9 @@ console.log(scores.indexOf(6)); // -1
 console.log(scores.indexOf(2)); // 1
 ```
 
-## ` lastIndexOf() `
+## `lastIndexOf()`
 
-```
-js
+```js
 Array.lastIndexOf(searchElement[, fromIndex = Array.length - 1])
 ```
 
@@ -225,8 +207,7 @@ Array.lastIndexOf(searchElement[, fromIndex = Array.length - 1])
 
 Different from the `indexOf()` method, the `lastIndexOf()` method searches for the element backward, starting at fromIndex.
 
-```
-js
+```js
 var foo = [1, 2, 3, 4, 5, 7];
 foo.lastIndexOf(7)
 // 5
