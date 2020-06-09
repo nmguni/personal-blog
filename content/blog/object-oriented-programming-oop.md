@@ -17,15 +17,15 @@ I will cover the four pillars of Object-Oriented Programming in the post then co
 
 OOP is programming or a style of programming centered around objects rather than functions.
 
-Objects interact with each other through methods and properties
+Objects interact with each other through methods and properties.
 
-Objects are used to store data, structure applications into modules and keep code clean
+Objects are used to store data, structure applications into modules and keep code clean.
 
 > *“ Object-oriented programming (OOP) is a programming paradigm based on the concept of “objects”, which may contain data, in the form of fields, often known as attributes and code, in the form of procedures, often known as methods.” — [Wikipedia](https://en.wikipedia.org/wiki/Object-oriented_programming)*
 
 ## 4 Pillars of Object-oriented Programming
 
-There are four main concepts of OOP, there are Encapsulation, Abstraction, Inheritance, and Polymorphism. 
+#### There are four main concepts of OOP, there are Encapsulation, Abstraction, Inheritance, and Polymorphism.
 
 ### Before OOP we had Procedural Programming ( PP )
 
@@ -49,13 +49,13 @@ let lastName = 'Montana'
 let age= 30
 
 function greeting() (firstName, lastName, age) {
-return `Hello my name is ${firstNname} ${lastName} and I just turned ${age}`
+    return `Hello my name is ${firstNname} ${lastName} and I just turned ${age}`
 };
 ```
 
 Here is the OOP way of doing things. We start off by creating a person object and filling it with the variables a functions we defined up above. Why is this better ? 
 
-* few to no parameters. All the parameters are properties are highly related and are apart of the the person object. Fewer the number of parameters the easier it is to maintain that function 
+* Few to no parameters. All the parameters are properties are highly related and are apart of the the person object. Fewer the number of parameters the easier it is to maintain that function.
 
 ```js
 const person = {
@@ -113,9 +113,9 @@ What is hidden with abstraction are the other functions inside the map() method 
 
 This is a person object that we can use as a blueprint to create other person objects. In other programming languages, this is called a class, in JavaScript, we call it a constructor or prototype. Using this constructor we can create as many **instances** as we want. 
 
-Person \
-name yearOfBirth
-job
+**Person**  \
+name \
+yearOfBirth job
 calculateAge() 
 
 **Instances of Person**
@@ -127,7 +127,7 @@ calculateAge()
 | Teacher        | Chef            | Dancer          |
 | calculateAge() | calculateAge()  | calculateAge()  |
 
-Mike Molly and Brad were created from the Person constructor, so they are now person instances and have access to the calculateAge() method. Again the constructor acts as a blueprint and is used to create instances that are also objects. \
+Mike Molly and Brad were created from the Person constructor, so they are now person instances and have access to the `calculateAge() `method. Again the constructor acts as a blueprint and is used to create instances that are also objects. 
 
 I will cover constructors in greater detail but for now, I just want to give you an overview of what they are and how they work in inheritance.
 
@@ -135,26 +135,30 @@ I will cover constructors in greater detail but for now, I just want to give you
 
 What if we wanted to have an athlete constructor with different properties and methods 
 
-**Athlete**  olymics
-olympicMedals
+**Athlete**  \
+olymics \
+olympicMedals \
 allowedOlympics()
 
 An athlete is also a person but with some different properties and methods. When creating an Athlete constructor there is no need to repeat the same properties and methods that we already have in the Person constructor because an athlete also has a name, job, and birth.
 
 **Person** \
-name yearOfBirth
-job
+name \
+yearOfBirth \
+job \
 calculateAge() 
 
 **Athlete**  \
-olymics olympicMedals
+olymics \
+olympicMedals \
 allowedOlympics()
 
 What we can do is to use inheritance. We will make the Athlete object inherit the properties and methods from the Person object .
 
 **Athlete** \
-olymics olympicMedals
-allowedOlympics()
+olymics \
+olympicMedals \
+allowedOlympics() \
 name
 yearOfBirth
 job
@@ -166,9 +170,9 @@ Inheritance allows Objects to inherit from each other, allowing you to keep your
 
 HTML elements TextBox Select and CheckBox have a few things in common like hidden, innerHTML, `click()` and `focus()`. Instead of redefining all these properties and methods  for each element we can define it once in a generic object, call it HTMLElement and have other objects inherit these properties and methods.
 
-## Polymorphism  
+## Polymorphism
 
-#### **Poly** - many   **Mortph** - Form | many forms 
+#### **Poly** - many   **Mortph** - Form | many forms
 
 Arguably the most powerful aspect of object-oriented programming.
 
@@ -182,11 +186,11 @@ The programmer does not have to know the exact type of the object in advance, an
 
 A `for/of loop` can loop over several kinds of data structures. This is another case of polymorphism
 
-## Summary  
+## Summary
 
 The idea of OOP is to encapsulate related data and functionality. If we want to make another similar object we do not have to redefine the properties/methods we can just inherit them from a similar object 
 
 **Encapsulation** - Reduce complexity and increase reusability \
-**Abstraction** - Reduce complexity and isolate the impact of change
+**Abstraction** - Reduce complexity and isolate the impact of change \
 **Inheritance** - One object s based on another object\
 **Polymorphism** - 'The ability of multiple object types to implement the same functionality
