@@ -25,7 +25,7 @@ Objects are used to store data, structure applications into modules and keep cod
 
 ## 4 Pillars of Object-oriented Programming
 
-#### There are four main concepts of OOP, there are Encapsulation, Abstraction, Inheritance, and Polymorphism.
+##### **There are four main concepts of OOP, there are Encapsulation, Abstraction, Inheritance, and Polymorphism.**
 
 ### Before OOP we had Procedural Programming ( PP )
 
@@ -114,10 +114,10 @@ What is hidden with abstraction are the other functions inside the map() method 
 This is a person object that we can use as a blueprint to create other person objects. In other programming languages, this is called a class, in JavaScript, we call it a constructor or prototype. Using this constructor we can create as many **instances** as we want. 
 
 | **Person**     |
-| -------------- | 
-| name           | 
+|:-------------- :|
+| name           |
 | yearOfBirth    |
-| job            | 
+| job            |
 | calculateAge() |
 
 **Instances of Person**
@@ -129,42 +129,48 @@ This is a person object that we can use as a blueprint to create other person ob
 | Teacher        | Chef            | Dancer          |
 | calculateAge() | calculateAge()  | calculateAge()  |
 
-Mike Molly and Brad were created from the Person constructor, so they are now person instances and have access to the `calculateAge() `method. Again the constructor acts as a blueprint and is used to create instances that are also objects. 
+Mike Molly and Brad were created from the Person constructor, so they are now person instances and have access to the `calculateAge()`method. Again the constructor acts as a blueprint and is used to create instances that are also objects. 
 
 I will cover constructors in greater detail but for now, I just want to give you an overview of what they are and how they work in inheritance.
 
 **Inheritance** is when one object is based on another object and one object gets access to another object's properties and object.
 
 What if we wanted to have an athlete constructor with different properties and methods 
-
-**Athlete**  \
-olymics \
-olympicMedals \
-allowedOlympics()
+| **Athlete**     |
+|:-------------- :|
+| olymics |
+| olympicMedals |
+| allowedOlympics()|
 
 An athlete is also a person but with some different properties and methods. When creating an Athlete constructor there is no need to repeat the same properties and methods that we already have in the Person constructor because an athlete also has a name, job, and birth.
 
-**Person** \
-name \
-yearOfBirth \
-job \
-calculateAge() 
+| **Person**     |
+|:-------------- :|
+| name           |
+| yearOfBirth    |
+| job            |
+| calculateAge() |
 
-**Athlete**  \
-olymics \
-olympicMedals \
-allowedOlympics()
+| **Athlete**     |
+|:-------------- :|
+| olymics |
+| olympicMedals |
+| allowedOlympics()|
 
 What we can do is to use inheritance. We will make the Athlete object inherit the properties and methods from the Person object .
 
-**Athlete** \
-olymics \
-olympicMedals \
-allowedOlympics() \
-name
-yearOfBirth
-job
-calculateAge() 
+
+
+
+| **Athlete**     |
+|:-------------- :|
+| olymics |
+| olympicMedals |
+| allowedOlympics()|
+| name           |
+| yearOfBirth    |
+| job            |
+| calculateAge() |
 
 The athlete also has access to the properties from the person object but also it's own Inheritance enables new objects to take on the properties of existing objects.
 
@@ -174,7 +180,9 @@ HTML elements TextBox Select and CheckBox have a few things in common like hidde
 
 ## Polymorphism
 
-#### **Poly** - many   **Mortph** - Form | many forms
+ **Poly** = many  
+
+ **Mortph** = Form | many forms
 
 Arguably the most powerful aspect of object-oriented programming.
 
@@ -192,7 +200,10 @@ A `for/of loop` can loop over several kinds of data structures. This is another 
 
 The idea of OOP is to encapsulate related data and functionality. If we want to make another similar object we do not have to redefine the properties/methods we can just inherit them from a similar object 
 
-**Encapsulation** - Reduce complexity and increase reusability \
-**Abstraction** - Reduce complexity and isolate the impact of change \
-**Inheritance** - One object s based on another object\
+**Encapsulation** - Reduce complexity and increase reusability 
+
+**Abstraction** - Reduce complexity and isolate the impact of change 
+
+**Inheritance** - One object s based on another object
+
 **Polymorphism** - 'The ability of multiple object types to implement the same functionality
