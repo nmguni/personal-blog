@@ -113,10 +113,12 @@ What is hidden with abstraction are the other functions inside the map() method 
 
 This is a person object that we can use as a blueprint to create other person objects. In other programming languages, this is called a class, in JavaScript, we call it a constructor or prototype. Using this constructor we can create as many **instances** as we want. 
 
-**Person**  \
-name \
-yearOfBirth job
-calculateAge() 
+| **Person**     |
+| -------------- | 
+| name           | 
+| yearOfBirth    |
+| job            | 
+| calculateAge() |
 
 **Instances of Person**
 
