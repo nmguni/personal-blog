@@ -24,6 +24,8 @@ class BlogPostTemplate extends React.Component {
             backgroundColor: "#fcffa4",
             display: "inline-block",
             padding: ".2rem .5rem",
+            fontFamily: `'Lato','Helvetica','Arial', sans-serif`,
+            fontWeight: "600",
           }}
         >
           {post.frontmatter.title}
@@ -35,6 +37,7 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1),
             marginTop: rhythm(-1),
             padding: ".2rem .5rem",
+            fontFamily: `'Lato','Helvetica','Arial', sans-serif`,
           }}
         >
           {post.frontmatter.date}

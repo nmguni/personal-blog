@@ -26,6 +26,7 @@ class Layout extends React.Component {
             backgroundColor: "#fcffa4",
             display: "inline-block",
             padding: ".2rem .5rem",
+            fontFamily: `'Lato','Helvetica','Arial', sans-serif`,
           }}
         >
           <Link
@@ -44,7 +45,7 @@ class Layout extends React.Component {
       header = (
         <h3
           style={{
-            fontFamily: `Montserrat, sans-serif`,
+            fontFamily: `'Lato','Helvetica','Arial', sans-serif`,
             marginTop: 0,
             color: `#353535`,
           }}
@@ -68,8 +69,9 @@ class Layout extends React.Component {
           style={{
             marginLeft: `auto`,
             marginRight: `auto`,
-            maxWidth: rhythm(25),
+            maxWidth: rhythm(27),
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+            fontFamily: `'Lato','Helvetica','Arial', sans-serif`,
           }}
         >
           <header>{header}</header>
