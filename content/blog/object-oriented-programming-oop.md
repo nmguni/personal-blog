@@ -1,6 +1,6 @@
 ---
 path: object-oriented-programming
-date: 2020-06-09T12:53:33.692Z
+date: 2020-05-22T12:53:33.692Z
 title: "Object-oriented programming (OOP) "
 description: Object-oriented programming (OOP) is a programming paradigm based
   on the concept of “objects”, which may contain data, in the form of fields...
