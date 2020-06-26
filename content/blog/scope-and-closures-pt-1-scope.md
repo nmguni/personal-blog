@@ -60,29 +60,23 @@ This means variables with the same names can be in two different functions, each
 function foo() {
     // Local Scope #1
     function bar() {
-        // Local Scope bar neasted inside of foo
+        // Local Scope #2 bar neasted inside of foo
     }
 }
-
-// Global Scope
-function fooBar() {
-    // Local Scope 
-}
-
 
 function fruits(){
     var fruit ='mango';
     console.log('inside function: ',fruit);
 }
 
-foo();                    //inside function: mango
+fruits();                    //inside function: mango
 console.log(fruit);       //error: fruit is not defined
 
 // Cannot log fruit because it is scoped to the fruit function
 // fruit is not visible from outside of the function
 ```
 
-**Let’s declare a `var` variable within a function body.**
+**Let’s declare a var variable within a function body.**
 
 ```js
 function run() {
@@ -132,7 +126,7 @@ To make variables or even functions that are scoped in the user module available
 
 Modules can load each other and with the use of `export` and `import` to interchange functionality, call functions of one module from another one.  
 
-**`Exporting` makes the variables available to other modules.**
+**Exporting makes the variables available to other modules.**
 
 ```js
 // in user.js module
@@ -175,8 +169,6 @@ If code block scope is nested inside the `kobe()` function scope. Scopes of any 
 
 ## Hoisting
 
-#### Raised or placed on top of.
-
 Variable and function declarations are processed before any code is executed. The browser takes the variable specifically `var` and functions declarations and places them at the top of the scope before execution from `var` and  from functions out of the code and places them at the top of the file.
 
 > “Wherever functions and variables are declared, they are moved to the top of their scope regardless of whether their scope is global or local.”
@@ -202,7 +194,7 @@ When we hoist it takes up space inside the browser and it will slow down code, n
 
 Generally we want to avoid hoisting. How do we avoid hoisting?  We can use anonymous functions instead of named functions because named functions are always hoisted.
 
-Function declarations are hoisted to the top.
+**Function declarations are hoisted to the top.**
 
 ```js
 hoisted(); // Output: "This function has been hoisted."
@@ -238,7 +230,7 @@ The declaration var expression it hoisted to the top but its assignment to a fun
 
 Hoisting is for variables defined with var in block scope or function names defined using function keyword. Variables defined with var inside function-level scope cannot be hoisted Let and const are not hoisted and ramin scoped to where they were defined.
 
-_____
+- - -
 
 ## Summary
 
@@ -253,3 +245,11 @@ _____
 **Nested scope** - Scope can be nested inside of another scope and code inside the innermost scope can access variables from outer scope.
 
 **Hoisting** - Var and function declarations are moved to the top of the scope
+
+- - -
+
+[MDN - https://developer.mozilla.org/en-US/docs/Glossary/Scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
+
+[w3schools - https://www.w3schools.com/js/js_scope.asp ](https://www.w3schools.com/js/js_scope.asp)
+
+[scotch - https://scotch.io/tutorials/understanding-scope-in-javascript](https://scotch.io/tutorials/understanding-scope-in-javascript)
