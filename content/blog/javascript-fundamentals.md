@@ -1,6 +1,6 @@
 ---
 path: javaScript-fundamentals
-date: 2020-05-20T21:12:23.458Z
+date: 2020-03-20T21:12:23.458Z
 title: "JavaScript Basics: Fundamentals"
 description: "Let us take a step back from all the Frameworks and let's have a
   JavaScript refresher to strengthen our foundation! "
@@ -29,7 +29,8 @@ We use variables to store data in a computer's memory. We give that memory locat
 
 Think of variables as containers or boxes used for organization, to easily find whats packed away your boxes will have to be labeled. What we put inside the box is the value(data) of the variable and what we label the box is the name of our variable.
 
-#### ***Variables cannot be a reserved keyword***\
+#### ***Variables cannot be a reserved keyword***
+
 ***Variable names should be descriptive***\
 ***Variables cannot start with a number***\
 ***Variables cannot contain space of hyphen***
@@ -64,7 +65,7 @@ console.log(name)
 
 <!--StartFragment-->
 
-## **Constance**
+## Constants
 
 With `let` you can change the value throughout the program
 
