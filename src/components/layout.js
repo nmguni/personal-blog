@@ -69,7 +69,7 @@ class Layout extends React.Component {
           style={{
             marginLeft: `auto`,
             marginRight: `auto`,
-            maxWidth: rhythm(27),
+            maxWidth: rhythm(23),
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
             fontFamily: `'Lato','Helvetica','Arial', sans-serif`,
           }}
@@ -136,7 +136,7 @@ const Wrapper = styled.div`
 
 const Footer = styled.footer`
   text-align: center;
-  margin: 24px;
+  margin: 55px;
 `
 
 export default Layout

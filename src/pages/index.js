@@ -5,8 +5,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
 
-import homeImage from "../images/undraw_profile_6l1l.png"
-
 import blogStyles from "../styles/blogStyles.module.scss"
 
 class IndexPage extends React.Component {
@@ -21,21 +19,23 @@ class IndexPage extends React.Component {
         />
 
         <h1 className={blogStyles.greating}>Welcome to my Blog! </h1>
-
-        <p>
-          I started this blog to cover technologies and topics that I'm
-          unfamiliar with or have trouble understanding. Writing about such
-          topics will help me and others who are reading this gain better
-          knowledge on the topics at hand.
+        <p className={blogStyles.aboutMe}>
+          My name is Ndumiso Mguni but you can call me Miso.
         </p>
-        <img
-          style={{ margin: 0 }}
-          src={homeImage}
-          width="50%"
-          alt="Gatsby Scene"
-        />
+
+        <p className={blogStyles.aboutMe}>
+          I started this blog to cover technologies and topics that I'm
+          unfamiliar with or have trouble understanding in Front-End
+          Development. Writing about such topics will not only help me with my
+          pursuit of knowledge in addition to other devs as well.
+        </p>
+        <p className={blogStyles.aboutMe}>
+          If I'm not at the gym, I'm reading a good book or trying to finish the
+          ones that are half-read, window shopping for sneakers, or attempting
+          to binge-watch an anime series in one night!
+        </p>
         <Link to="/blog/">
-          <Button marginTop="35px">Go to Blog</Button>
+          <Button marginTop="35px">Blog</Button>
         </Link>
       </Layout>
     )
