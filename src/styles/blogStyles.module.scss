@@ -82,12 +82,13 @@
 
 .footerLinks {
   color: #000;
+  background-color: #f4fa9c;
   text-decoration: none !important;
   margin: 0 0.5rem;
   border: solid;
   padding: 0.2rem;
   border-radius: 4px;
   &:hover {
-    background-color: #f4fa9c;
+    background-color: #fff;
   }
 }
