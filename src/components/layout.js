@@ -22,18 +22,20 @@ class Layout extends React.Component {
           style={{
             ...scale(1.5),
             marginBottom: rhythm(1.5),
+
             marginTop: 0,
-            backgroundColor: "#fcffa4",
+            backgroundColor: "#364f6bed",
             display: "inline-block",
             padding: ".2rem .5rem",
             fontFamily: `'Lato','Helvetica','Arial', sans-serif`,
+            borderRadius: "4px",
           }}
         >
           <Link
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
-              color: `#353535`,
+              color: `#fff`,
             }}
             to={location.pathname === blogPath ? `/blog/` : `/`}
           >
@@ -64,12 +66,12 @@ class Layout extends React.Component {
       )
     }
     return (
-      <Wrapper>
+      <Wrapper className={blogStyles.backgroundColor}>
         <div
           style={{
             marginLeft: `auto`,
             marginRight: `auto`,
-            maxWidth: rhythm(23),
+            maxWidth: rhythm(27),
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
             fontFamily: `'Lato','Helvetica','Arial', sans-serif`,
           }}
@@ -77,8 +79,8 @@ class Layout extends React.Component {
           <header>{header}</header>
           <main>{children}</main>
         </div>
-        <Footer className={blogStyles.footer}>
-          {new Date().getFullYear()} | Ndumso Mguni |{` `}
+        <Footer style={{ margin: "0px" }} className={blogStyles.footer}>
+          {/* {new Date().getFullYear()} | Ndumso Mguni |{` `} */}
           <a
             href="https://www.linkedin.com/in/ndumiso-mguni-121b7b164/"
             target="_blank"
@@ -104,18 +106,6 @@ class Layout extends React.Component {
               size="lg"
             />
           </a>
-          {/* <a
-            href="mailto: ndumiso29@gmail.com "
-            target="_blank"
-            rel="noopener noreferrer"
-            className={blogStyles.footerLinks}
-          >
-            <FontAwesomeIcon
-              icon={faenvelope}
-              className="icon-class"
-              size="lg"
-            />
-          </a> */}
           <a
             href="https://github.com/nmguni"
             target="_blank"
