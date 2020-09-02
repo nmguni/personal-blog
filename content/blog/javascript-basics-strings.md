@@ -1,6 +1,6 @@
 ---
 path: javascript-strings
-date: 2020-04-17T15:11:29.609Z
+date: 2020-06-26T15:11:29.609Z
 title: "JavaScript Basics: Strings"
 description: The String global object is a constructor for strings or a sequence
   of characters.
