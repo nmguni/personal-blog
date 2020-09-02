@@ -1,6 +1,6 @@
 ---
 path: javascript-arrays
-date: 2020-04-03T14:55:06.209Z
+date: 2020-06-12T14:55:06.209Z
 title: "JavaScript Basics: Arrays"
 description: The JavaScript Array class is a global object that is used in
   the construction of arrays; which are high-level, list-like objects.
