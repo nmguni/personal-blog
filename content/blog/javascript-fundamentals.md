@@ -1,6 +1,6 @@
 ---
 path: javaScript-fundamentals
-date: 2020-03-20T21:12:23.458Z
+date: 2020-05-22T21:12:23.458Z
 title: "JavaScript Basics: Fundamentals"
 description: "Let us take a step back from all the Frameworks and let's have a
   JavaScript refresher to strengthen our foundation! "

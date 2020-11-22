@@ -1,6 +1,6 @@
 ---
 path: javascript-scope
-date: 2020-06-12T12:09:47.507Z
+date: 2020-07-30T12:09:47.507Z
 title: "Scope and Closures pt 1: Scope"
 description: "Scope and closures are a significant part of understanding
   JavaScript, they can also be incorporated in interview questions. "
