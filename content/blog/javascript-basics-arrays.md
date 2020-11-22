@@ -5,6 +5,8 @@ title: "JavaScript Basics: Arrays"
 description: The JavaScript Array class is a global object that is used in
   the construction of arrays; which are high-level, list-like objects.
 ---
+> ![arrays image ](assets/code4.png "arrays ")
+>
 > The JavaScript Array class is a global object that is used in the construction of arrays; which are high-level, list-like objects.
 
 <!--StartFragment-->
