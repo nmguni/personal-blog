@@ -16,7 +16,7 @@
   // background-color: #cfd8dc7d;
   background-color: #fff;
   padding: 0.5rem;
-  height: 250px;
+  height: 375px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.068), 0 2px 5px rgba(0, 0, 0, 0.123);
   @media (max-width: 550px) {
@@ -63,4 +63,9 @@
     width: 100%;
     height: 200px;
   }
+}
+
+.blog__images {
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.16);
 }

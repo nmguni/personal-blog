@@ -3,9 +3,10 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
-
 import blogList from "../styles/blogList.module.scss"
 import BlogHeader from "../components/blogHeader"
+
+import { BLogPostImages } from "../data/data"
 
 class Blog extends React.Component {
   render() {
@@ -15,7 +16,6 @@ class Blog extends React.Component {
 
     return (
       <div style={{ backgroundColor: "#F4F4F4" }}>
-        {" "}
         <Layout location={this.props.location} title={siteTitle}>
           <SEO title="All posts" />
           <BlogHeader />
@@ -49,7 +49,6 @@ class Blog extends React.Component {
 }
 
 export default Blog
-
 export const pageQuery = graphql`
   query {
     site {

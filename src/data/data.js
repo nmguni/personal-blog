@@ -1,20 +1,27 @@
-const blogImages = [
+export const BLogPostImages = [
   {
-    image: "../images/code.jpg",
-    alt: "Your description here 1",
     id: 1,
+    mainImage: "/images/code1.jpg",
+    alt: "image one",
   },
-
   {
-    image: "../images/code2.jpg",
-    alt: "Your description here 2",
     id: 2,
+    mainImage: "/images/code2.jpg",
+    alt: "image two",
   },
   {
-    image: "../images/code3.jpg",
-    alt: "Your description here 3",
     id: 3,
+    mainImage: "/images/code3.jpg",
+    alt: "image three",
+  },
+  {
+    id: 4,
+    mainImage: "/images/code4.jpg",
+    alt: "image three",
+  },
+  {
+    id: 4,
+    mainImage: "/images/code5.jpg",
+    alt: "image three",
   },
 ]
-
-export default blogImages
