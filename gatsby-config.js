@@ -68,18 +68,7 @@ module.exports = {
         // trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Personal Blog`,
-        short_name: `Blog`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/icon.png`,
-      },
-    },
+
     {
       resolve: `gatsby-plugin-typography`,
       options: {
