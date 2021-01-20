@@ -1,12 +1,12 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 import styled from "styled-components"
 import blogStyles from "../styles/blogStyles.module.scss"
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { rhythm, scale } from "../utils/typography"
-// import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
-// import { faTwitter } from "@fortawesome/free-brands-svg-icons"
-// import { faGit } from "@fortawesome/free-brands-svg-icons"
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
+import { faTwitter } from "@fortawesome/free-brands-svg-icons"
+import { faGit } from "@fortawesome/free-brands-svg-icons"
 // import { faenvelope } from "@fortawesome/free-brands-svg-icons"
 
 class Layout extends React.Component {
@@ -22,25 +22,23 @@ class Layout extends React.Component {
           style={{
             ...scale(1.5),
             marginBottom: rhythm(1.5),
-
             marginTop: 0,
-            backgroundColor: "#364f6bed",
+            backgroundColor: "#fcffa4",
             display: "inline-block",
             padding: ".2rem .5rem",
             fontFamily: `'Lato','Helvetica','Arial', sans-serif`,
-            borderRadius: "4px",
           }}
         >
-          {/* <Link
+          <Link
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
-              color: `#fff`,
+              color: `#353535`,
             }}
             to={location.pathname === blogPath ? `/blog/` : `/`}
           >
             {title}
-          </Link> */}
+          </Link>
         </h1>
       )
     } else {
@@ -52,7 +50,7 @@ class Layout extends React.Component {
             color: `#353535`,
           }}
         >
-          {/* <Link
+          <Link
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
@@ -61,17 +59,17 @@ class Layout extends React.Component {
             to={`/blog/`}
           >
             {title}
-          </Link> */}
+          </Link>
         </h3>
       )
     }
     return (
-      <Wrapper className={blogStyles.backgroundColor}>
+      <Wrapper>
         <div
           style={{
             marginLeft: `auto`,
             marginRight: `auto`,
-            maxWidth: rhythm(45),
+            maxWidth: rhythm(23),
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
             fontFamily: `'Lato','Helvetica','Arial', sans-serif`,
           }}
@@ -79,9 +77,9 @@ class Layout extends React.Component {
           <header>{header}</header>
           <main>{children}</main>
         </div>
-        {/* <Footer style={{ margin: "0px" }} className={blogStyles.footer}> */}
-        {/* {new Date().getFullYear()} | Ndumso Mguni |{` `} */}
-        {/* <a
+        <Footer className={blogStyles.footer}>
+          {new Date().getFullYear()} | Ndumso Mguni |{` `}
+          <a
             href="https://www.linkedin.com/in/ndumiso-mguni-121b7b164/"
             target="_blank"
             rel="noopener noreferrer"
@@ -106,6 +104,18 @@ class Layout extends React.Component {
               size="lg"
             />
           </a>
+          {/* <a
+            href="mailto: ndumiso29@gmail.com "
+            target="_blank"
+            rel="noopener noreferrer"
+            className={blogStyles.footerLinks}
+          >
+            <FontAwesomeIcon
+              icon={faenvelope}
+              className="icon-class"
+              size="lg"
+            />
+          </a> */}
           <a
             href="https://github.com/nmguni"
             target="_blank"
@@ -113,8 +123,8 @@ class Layout extends React.Component {
             className={blogStyles.footerLinks}
           >
             <FontAwesomeIcon icon={faGit} className="icon-class" size="lg" />
-          </a> */}
-        {/* </Footer> */}
+          </a>
+        </Footer>
       </Wrapper>
     )
   }

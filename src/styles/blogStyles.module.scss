@@ -1,67 +1,46 @@
-.home {
-  background-color: #242b34;
-  height: 100vh;
-  overflow: hidden;
-  color: #fff;
-  letter-spacing: 1.5px;
-  font-family: "Roboto", sans-serif;
-}
-
-.home__container {
-  height: 100%;
-  margin: 8% 10% 0 10%;
-}
-.home__title {
-  font-size: 5vw;
-}
-.home__subtitle {
-  font-size: 3vw;
-  font-weight: 200;
-  margin: 0;
-}
-
-.subtitle__color {
-  color: #00fafa;
-}
-
-.home__paragraph {
-  line-height: 2.5rem;
-  width: 85%;
-  padding-top: 1rem;
-}
-
-.home__stack {
-  color: #00fafa;
-  padding: 1rem 0 1rem 0;
-  margin: 0;
-}
-
-.btn__container {
-  padding: 1rem 0 1rem 0;
-  .button {
-    padding: 0.5rem 2rem;
-
-    color: #fff;
-    background-color: #7be4f13d;
-    box-shadow: none;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
+.title {
+  color: #353535;
+  box-shadow: none;
+  letter-spacing: 0.95px;
+  padding: 0.5rem;
+  &:hover {
+    color: hsla(0, 0%, 0%, 0.66);
   }
+}
+
+.content {
+  color: hsla(0, 0%, 0%, 0.66);
+  padding: 0.5rem;
+}
+
+.description {
+  color: hsla(0, 0%, 0%, 0.66);
+  padding: 0.5rem;
+  border-bottom: 2px solid #353535;
+}
+
+.greating {
+  color: #353535;
+  margin: 0.2rem 0;
+}
+.aboutMe {
+  margin: 0.22rem;
+  line-height: 2rem;
+  font-size: 1.1rem;
 }
 .footer {
   color: rgb(53, 53, 53);
 }
 
 .footerLinks {
-  color: #000;
-  background-color: #f4fa9c;
+  color: #fff;
   text-decoration: none !important;
   margin: 0 0.5rem;
   border: solid;
   padding: 0.2rem;
-  border-radius: 4px;
+  background-color: #364f6b96;
+  border-radius: 20%;
   &:hover {
-    background-color: #fff;
+    background-color: #364f6b;
   }
 }
