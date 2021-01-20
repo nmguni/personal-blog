@@ -19,25 +19,13 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <h1
-          style={{
-            backgroundColor: "#fcffa4",
-            display: "inline-block",
-            padding: ".2rem .5rem",
-            fontFamily: `'Lato','Helvetica','Arial', sans-serif`,
-            fontWeight: "600",
-          }}
-        >
-          {post.frontmatter.title}
-        </h1>
+        <h1>{post.frontmatter.title}</h1>
         <p
           style={{
             ...scale(-1 / 5),
             display: `block`,
             marginBottom: rhythm(1),
             marginTop: rhythm(-1),
-            padding: ".2rem .5rem",
-            fontFamily: `'Lato','Helvetica','Arial', sans-serif`,
           }}
         >
           {post.frontmatter.date}
@@ -61,14 +49,14 @@ class BlogPostTemplate extends React.Component {
         >
           <li>
             {previous && (
-              <Link to={`blog${previous.fields.slug}`} rel="prev">
+              <Link to={`/blog${previous.fields.slug}`} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={`blog${next.fields.slug}`} rel="next">
+              <Link to={`/blog${next.fields.slug}`} rel="next">
                 {next.frontmatter.title} →
               </Link>
             )}
