@@ -5,7 +5,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 import Button from "../components/button"
-
+import SearchPosts from "../components/searchPosts"
+import Bio from "../components/bio"
 import blogStyles from "../styles/blogStyles.module.scss"
 
 class Blog extends React.Component {
@@ -13,6 +14,7 @@ class Blog extends React.Component {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMdx.edges
+    const localSearchBlog = data.localSearchBlog
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -30,7 +32,7 @@ class Blog extends React.Component {
                 >
                   <Link
                     className={blogStyles.title}
-                    to={`blog${node.fields.slug}`}
+                    to={`/blog${node.fields.slug}`}
                   >
                     {title}
                   </Link>
