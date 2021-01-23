@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 import { rhythm, scale } from "../utils/typography"
 import { Nav } from "./Nav"
-import { Header } from "../elements"
+import { Header } from "./Header"
 
 class Layout extends React.Component {
   render() {
@@ -66,7 +66,7 @@ class Layout extends React.Component {
             // padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
           }}
         >
-          <header>{header}</header>
+          {/* <header>{header}</header> */}
           <main>{children}</main>
         </div>
         <Footer>
