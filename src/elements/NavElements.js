@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 export const Navbar = styled.nav`
-  background-color: #22212169;
   font-family: 'Roboto', sans-serif;
 
   height: 80px;
@@ -42,9 +41,8 @@ export const NavMenu = styled.ul`
   list-style: none;
   text-align: center;
   justify-content: center;
-  background-color: red;
+  color: #454545;
   height: 100%;
-  ${"" /* margin-right: -22px; */}
 
   @media screen and (max-width: 760px) {
     display: none;
@@ -56,7 +54,8 @@ export const NavItem = styled.ul`
 `
 
 export const NavLinks = styled.div`
-  color: #fff;
+  text-decoration: none;
+  color: #454545;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -66,7 +65,7 @@ export const NavLinks = styled.div`
   cursor: pointer;
   letter-spacing: 0.1rem;
   /* highlght clicked link */
-  &.active {
+  ${"" /* &.active {
     border-bottom: 3px solid #01bf71;
-  }
+  } */}
 `

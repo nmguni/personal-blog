@@ -14,19 +14,32 @@ export const Nav = () => {
     <>
       <Navbar>
         <NavbarContainer>
-          <NavLogo>the blog</NavLogo>
+          <NavLinks>
+            <NavLogo to="/">
+              <NavLogo>the blog</NavLogo>
+            </NavLogo>
+          </NavLinks>
           <NavMenu>
             <NavItem>
-              <NavLinks>About me</NavLinks>
+              <Link to="/about">
+                <NavLinks>about</NavLinks>
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLinks to="/blog"> blog</NavLinks>
+              <Link to="/blog">
+                {" "}
+                <NavLinks> blog</NavLinks>
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLinks>resume</NavLinks>
+              <Link>
+                <NavLinks>resume</NavLinks>
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLinks>projects</NavLinks>
+              <Link to="/projects">
+                <NavLinks>projects</NavLinks>
+              </Link>
             </NavItem>
           </NavMenu>
         </NavbarContainer>

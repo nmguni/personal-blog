@@ -12,7 +12,7 @@ class IndexPage extends React.Component {
 
     return (
       <>
-        <Nav />
+        {/* <Nav /> */}
         <Layout location={this.props.location}>
           <SEO
             title="Home"
@@ -29,8 +29,8 @@ class IndexPage extends React.Component {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum."
           </p>
-          <Link to="/blog/">
-            {/* <Button marginTop="35px">Go to Blog</Button> */}
+          <Link to="/blog">
+            <Button marginTop="35px">Go to Blog</Button>
           </Link>
         </Layout>
       </>

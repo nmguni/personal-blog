@@ -3,6 +3,8 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 import { rhythm, scale } from "../utils/typography"
+import { Nav } from "./Nav"
+import { Header } from "../elements"
 
 class Layout extends React.Component {
   render() {
@@ -11,49 +13,51 @@ class Layout extends React.Component {
     const blogPath = `${__PATH_PREFIX__}/blog/`
     let header
 
-    if (location.pathname === rootPath || location.pathname === blogPath) {
-      header = (
-        <h1
-          style={{
-            ...scale(1.5),
-            // marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={location.pathname === blogPath ? `/blog/` : `/`}
-          >
-            {title}
-          </Link>
-        </h1>
-      )
-    } else {
-      header = (
-        <h3
-          style={{
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/blog/`}
-          >
-            {title}
-          </Link>
-        </h3>
-      )
-    }
+    // if (location.pathname === rootPath || location.pathname === blogPath) {
+    //   header = (
+    //     <h1
+    //       style={{
+    //         ...scale(1.5),
+    //         // marginBottom: rhythm(1.5),
+    //         marginTop: 0,
+    //       }}
+    //     >
+    //       <Link
+    //         style={{
+    //           boxShadow: `none`,
+    //           textDecoration: `none`,
+    //           color: `inherit`,
+    //         }}
+    //         to={location.pathname === blogPath ? `/blog/` : `/`}
+    //       >
+    //         {title}
+    //       </Link>
+    //     </h1>
+    //   )
+    // } else {
+    //   header = (
+    //     <h3
+    //       style={{
+    //         marginTop: 0,
+    //       }}
+    //     >
+    //       <Link
+    //         style={{
+    //           boxShadow: `none`,
+    //           textDecoration: `none`,
+    //           color: `inherit`,
+    //         }}
+    //         to={`/blog/`}
+    //       >
+    //         {title}
+    //       </Link>
+    //     </h3>
+    //   )
+    // }
     return (
       <Wrapper>
+        <Nav />
+        <Header />
         <div
           style={{
             marginLeft: `auto`,
