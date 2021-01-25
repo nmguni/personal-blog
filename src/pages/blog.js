@@ -10,6 +10,7 @@ import {
   BlogDec,
   BlogDate,
   Difficulty,
+  BlogWrapper,
 } from "../elements"
 
 class Blog extends React.Component {
@@ -21,29 +22,32 @@ class Blog extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
-        <>
-          {posts.map(({ node }) => {
-            const title = node.frontmatter.title || node.fields.slug
-            return (
-              <BlogContainer key={node.fields.slug}>
-                <Link to={`/blog${node.fields.slug}`}>
-                  <BlogTitle>{title}</BlogTitle>
-                </Link>
-                <BlogDec
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
-                />
-                <Difficulty>easy</Difficulty>
-                <BlogDate>{node.frontmatter.date}</BlogDate>
-              </BlogContainer>
-            )
-          })}
-        </>
-        <Link to="/">
-          <Button marginTop="85px">Go Home</Button>
-        </Link>
+        <BlogWrapper>
+          {" "}
+          <SEO title="All posts" />
+          <>
+            {posts.map(({ node }) => {
+              const title = node.frontmatter.title || node.fields.slug
+              return (
+                <BlogContainer key={node.fields.slug}>
+                  <Link to={`/blog${node.fields.slug}`}>
+                    <BlogTitle>{title}</BlogTitle>
+                  </Link>
+                  <BlogDec
+                    dangerouslySetInnerHTML={{
+                      __html: node.frontmatter.description || node.excerpt,
+                    }}
+                  />
+                  <Difficulty>easy</Difficulty>
+                  <BlogDate>{node.frontmatter.date}</BlogDate>
+                </BlogContainer>
+              )
+            })}
+          </>
+          <Link to="/">
+            <Button marginTop="85px">Go Home</Button>
+          </Link>
+        </BlogWrapper>
       </Layout>
     )
   }
