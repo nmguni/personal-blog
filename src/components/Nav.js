@@ -10,18 +10,22 @@ import {
 } from "../elements"
 
 export const Nav = () => {
+  function isActive({ isCurrent }) {
+    return isCurrent ? { className: "active" } : null
+  }
+
   return (
     <>
       <Navbar>
         <NavbarContainer>
-          <NavLinks>
-            <NavLogo to="/">
+          <NavItem>
+            <Link to="/">
               <NavLogo>the blog</NavLogo>
-            </NavLogo>
-          </NavLinks>
+            </Link>
+          </NavItem>
           <NavMenu>
             <NavItem>
-              <Link to="/about">
+              <Link to="/about" getProps={isActive}>
                 <NavLinks>about</NavLinks>
               </Link>
             </NavItem>

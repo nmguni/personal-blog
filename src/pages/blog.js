@@ -12,6 +12,7 @@ import {
   Difficulty,
   BlogWrapper,
 } from "../elements"
+import { Header } from "../components/Header"
 
 class Blog extends React.Component {
   render() {
@@ -20,8 +21,11 @@ class Blog extends React.Component {
     const posts = data.allMdx.edges
     const localSearchBlog = data.localSearchBlog
 
+    const title = "Welome to my blog page"
+
     return (
       <Layout location={this.props.location} title={siteTitle}>
+        <Header title={title} />
         <BlogWrapper>
           {" "}
           <SEO title="All posts" />

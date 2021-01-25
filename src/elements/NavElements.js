@@ -1,8 +1,8 @@
+import React from "react"
 import styled from "styled-components"
 
 export const Navbar = styled.nav`
   font-family: 'Roboto', sans-serif;
-
   height: 80px;
   display: flex;
   justify-content: center;
@@ -28,11 +28,14 @@ export const NavbarContainer = styled.div`
 `
 export const NavLogo = styled.div`
   text-transform: uppercase;
+  text-decoration: none;
+  color: #454545;
   letter-spacing: 0.2rem;
   display: flex;
   align-items: center;
   margin-left: 24px;
   font-weight: 700;
+  height: 80px;
 `
 
 export const NavMenu = styled.ul`
@@ -55,17 +58,25 @@ export const NavItem = styled.ul`
 
 export const NavLinks = styled.div`
   text-decoration: none;
-  color: #454545;
   display: flex;
   align-items: center;
   text-decoration: none;
+  color: #454545;
   padding: 0 1rem;
-  height: 100%;
+
   height: 100%;
   cursor: pointer;
   letter-spacing: 0.1rem;
-  /* highlght clicked link */
-  ${"" /* &.active {
-    border-bottom: 3px solid #01bf71;
-  } */}
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: #f5f5f5;
+    color: #1e8686;
+  }
+`
+export const Link = styled.a`
+  background-color: red;
+  &.active {
+    color: red;
+  }
 `

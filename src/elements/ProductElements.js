@@ -1,5 +1,7 @@
 import styled from "styled-components"
 
+import Img from "../images/testImg.png"
+
 export const ProjectPageContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -29,7 +31,12 @@ export const ProjectImageWrapper = styled.div`
   align-items: center;
 `
 export const ProjectImg = styled.div`
-  color: red;
+  background-image: url(${Img});
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 360px;
+  height: 150px;
 `
 export const ProjectDescription = styled.div`
   margin: 0;

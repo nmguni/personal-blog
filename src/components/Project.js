@@ -17,7 +17,7 @@ const Project = () => {
     <ProjectPageContainer>
       <ProjectCard>
         <ProjectImageWrapper>
-          <ProjectImg>img</ProjectImg>
+          <ProjectImg> </ProjectImg>
         </ProjectImageWrapper>
         <ProjectDescription>
           <ProjectName>Store App</ProjectName>
@@ -31,7 +31,7 @@ const Project = () => {
 
       <ProjectCard>
         <ProjectImageWrapper>
-          <ProjectImg>img</ProjectImg>
+          <ProjectImg></ProjectImg>
         </ProjectImageWrapper>
         <ProjectDescription>
           <ProjectName>Store App</ProjectName>
@@ -45,7 +45,7 @@ const Project = () => {
 
       <ProjectCard>
         <ProjectImageWrapper>
-          <ProjectImg>img</ProjectImg>
+          <ProjectImg></ProjectImg>
         </ProjectImageWrapper>
         <ProjectDescription>
           <ProjectName>Store App</ProjectName>
@@ -58,7 +58,7 @@ const Project = () => {
       </ProjectCard>
       <ProjectCard>
         <ProjectImageWrapper>
-          <ProjectImg>img</ProjectImg>
+          <ProjectImg></ProjectImg>
         </ProjectImageWrapper>
         <ProjectDescription>
           <ProjectName>Store App</ProjectName>
@@ -71,7 +71,7 @@ const Project = () => {
       </ProjectCard>
       <ProjectCard>
         <ProjectImageWrapper>
-          <ProjectImg>img</ProjectImg>
+          <ProjectImg></ProjectImg>
         </ProjectImageWrapper>
         <ProjectDescription>
           <ProjectName>Store App</ProjectName>
@@ -84,7 +84,7 @@ const Project = () => {
       </ProjectCard>
       <ProjectCard>
         <ProjectImageWrapper>
-          <ProjectImg>img</ProjectImg>
+          <ProjectImg></ProjectImg>
         </ProjectImageWrapper>
         <ProjectDescription>
           <ProjectName>Store App</ProjectName>
