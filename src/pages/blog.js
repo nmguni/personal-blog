@@ -48,9 +48,6 @@ class Blog extends React.Component {
               )
             })}
           </>
-          <Link to="/">
-            <Button marginTop="85px">Go Home</Button>
-          </Link>
         </BlogWrapper>
       </Layout>
     )
