@@ -7,16 +7,12 @@ import {
   HighlightTxt,
 } from "../elements"
 
-export const Header = ({ title }) => {
+export const Header = ({ title, subHeader }) => {
   return (
     <HeaderContainer>
       {" "}
       <HeadMainText>{title}</HeadMainText>
-      <HeadSubText>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error
-        voluptatum suscipit soluta expedita reiciendis nisi totam alias neque
-        facere magnam!
-      </HeadSubText>
+      <HeadSubText>{subHeader}</HeadSubText>
     </HeaderContainer>
   )
 }

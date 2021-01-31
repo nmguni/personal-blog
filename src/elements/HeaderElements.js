@@ -12,10 +12,13 @@ export const HeaderContainer = styled.div`
   align-items: center;
 `
 export const HeadMainText = styled.div`
-  font-size: 4vw;
+  font-size: 5vw;
 `
 export const HeadSubText = styled.p`
   font-size: 1rem;
+  text-align: center;
+  width: 40%;
+  color: #747474;
 `
 export const HighlightTxt = styled.span`
   color: #00fafa;

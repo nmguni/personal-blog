@@ -7,7 +7,8 @@ export const BlogWrapper = styled.div`
   align-items: center;
 `
 export const BlogContainer = styled.div`
-  border: 1.5px solid #656565;
+  border: 2px solid #656565;
+  font-family: "Roboto", sans-serif;
   ${"" /* background-color: #f4f4f4; */}
   border-radius: 3px;
   padding: 0.5rem 1.5rem;
@@ -18,14 +19,23 @@ export const BlogTitle = styled.h1`
   font-size: 1.8rem;
   font-weight: 500;
   color: #454545;
-  padding: 0;
+  padding: 2px;
   margin: 0;
+  display: inline-block;
+  box-shadow: none;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: #00fafa;
+  }
 `
 export const BlogDec = styled.div`
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  color: #747474;
 `
 export const BlogDate = styled.div`
-  font-size: 0.5rem;
+  font-size: 0.6rem;
 `
 export const Difficulty = styled.div`
   text-transform: uppercase;

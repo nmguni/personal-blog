@@ -34,7 +34,12 @@ class Blog extends React.Component {
               const title = node.frontmatter.title || node.fields.slug
               return (
                 <BlogContainer key={node.fields.slug}>
-                  <Link to={`/blog${node.fields.slug}`}>
+                  <Link
+                    style={{
+                      boxShadow: `none`,
+                    }}
+                    to={`/blog${node.fields.slug}`}
+                  >
                     <BlogTitle>{title}</BlogTitle>
                   </Link>
                   <BlogDec

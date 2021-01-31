@@ -4,9 +4,10 @@ import Project from "../components/Project"
 import { Header } from "../components/Header"
 
 const Projects = () => {
+  const title = "Projects Page"
   return (
     <Layout>
-      <Header />
+      <Header title={title} />
       <Project />
     </Layout>
   )
