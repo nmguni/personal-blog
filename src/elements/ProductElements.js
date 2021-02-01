@@ -1,6 +1,14 @@
 import styled from "styled-components"
+import styledMap from "styled-map"
 
-import Img from "../images/testImg.png"
+import ColorData from "../data/ColorData"
+
+const buttonColor = styledMap`
+  primary: #D1C4E9;
+  warning: #80DEEA;
+  info: #80CBC4;
+
+`
 
 export const ProjectPageContainer = styled.div`
   display: flex;
@@ -20,27 +28,21 @@ export const ProjectCard = styled.div`
   margin: 1rem;
 `
 export const ProjectImageWrapper = styled.div`
-  background-color: #e8eaf6;
+  background-color: #f5f5f5;
   width: 400px;
   height: 280px;
   border-radius: 3px;
 
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 `
 export const ProjectImg = styled.div`
-  background-image: url(${Img});
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
   width: 360px;
-  height: 150px;
 `
 export const ProjectDescription = styled.div`
   margin: 0;
-  color: #000;
+  color: ${buttonColor};
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;

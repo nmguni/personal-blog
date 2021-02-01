@@ -21,7 +21,7 @@ class Blog extends React.Component {
     const posts = data.allMdx.edges
     const localSearchBlog = data.localSearchBlog
 
-    const title = "Welome to my blog page"
+    const title = "blog"
 
     return (
       <Layout location={this.props.location} title={siteTitle}>

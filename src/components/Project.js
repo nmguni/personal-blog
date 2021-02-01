@@ -5,96 +5,34 @@ import {
   ProjectImg,
   ProjectName,
   ProjectStack,
-  ProjectLinks,
-  GitHubLnk,
-  DemoLink,
   ProjectDescription,
   ProjectCard,
 } from "../elements"
 
+import ProjectData from "../data/ProjectData"
+
 const Project = () => {
   return (
     <ProjectPageContainer>
-      <ProjectCard>
-        <ProjectImageWrapper>
-          <ProjectImg> </ProjectImg>
-        </ProjectImageWrapper>
-        <ProjectDescription>
-          <ProjectName>Store App</ProjectName>
-          <ProjectStack>react - css - scss - javascript</ProjectStack>
-          {/* <ProjectLinks>
+      {ProjectData.map(x => (
+        <ProjectCard key={x.key}>
+          <a href={x.liveLink} target="_blank" rel="noopener noreferrer">
+            <ProjectImageWrapper>
+              <ProjectImg>
+                <img src={x.img} alt={x.alt} />
+              </ProjectImg>
+            </ProjectImageWrapper>
+            <ProjectDescription>
+              <ProjectName>{x.title}</ProjectName>
+              <ProjectStack>{x.stack}</ProjectStack>
+              {/* <ProjectLinks>
             <GitHubLnk>Github</GitHubLnk>
             <DemoLink>Live Demo</DemoLink>
           </ProjectLinks> */}
-        </ProjectDescription>
-      </ProjectCard>
-
-      <ProjectCard>
-        <ProjectImageWrapper>
-          <ProjectImg></ProjectImg>
-        </ProjectImageWrapper>
-        <ProjectDescription>
-          <ProjectName>Store App</ProjectName>
-          <ProjectStack>react - css - scss - javascript</ProjectStack>
-          {/* <ProjectLinks>
-            <GitHubLnk>Github</GitHubLnk>
-            <DemoLink>Live Demo</DemoLink>
-          </ProjectLinks> */}
-        </ProjectDescription>
-      </ProjectCard>
-
-      <ProjectCard>
-        <ProjectImageWrapper>
-          <ProjectImg></ProjectImg>
-        </ProjectImageWrapper>
-        <ProjectDescription>
-          <ProjectName>Store App</ProjectName>
-          <ProjectStack>react - css - scss - javascript</ProjectStack>
-          {/* <ProjectLinks>
-            <GitHubLnk>Github</GitHubLnk>
-            <DemoLink>Live Demo</DemoLink>
-          </ProjectLinks> */}
-        </ProjectDescription>
-      </ProjectCard>
-      <ProjectCard>
-        <ProjectImageWrapper>
-          <ProjectImg></ProjectImg>
-        </ProjectImageWrapper>
-        <ProjectDescription>
-          <ProjectName>Store App</ProjectName>
-          <ProjectStack>react - css - scss - javascript</ProjectStack>
-          {/* <ProjectLinks>
-            <GitHubLnk>Github</GitHubLnk>
-            <DemoLink>Live Demo</DemoLink>
-          </ProjectLinks> */}
-        </ProjectDescription>
-      </ProjectCard>
-      <ProjectCard>
-        <ProjectImageWrapper>
-          <ProjectImg></ProjectImg>
-        </ProjectImageWrapper>
-        <ProjectDescription>
-          <ProjectName>Store App</ProjectName>
-          <ProjectStack>react - css - scss - javascript</ProjectStack>
-          {/* <ProjectLinks>
-            <GitHubLnk>Github</GitHubLnk>
-            <DemoLink>Live Demo</DemoLink>
-          </ProjectLinks> */}
-        </ProjectDescription>
-      </ProjectCard>
-      <ProjectCard>
-        <ProjectImageWrapper>
-          <ProjectImg></ProjectImg>
-        </ProjectImageWrapper>
-        <ProjectDescription>
-          <ProjectName>Store App</ProjectName>
-          <ProjectStack>react - css - scss - javascript</ProjectStack>
-          {/* <ProjectLinks>
-            <GitHubLnk>Github</GitHubLnk>
-            <DemoLink>Live Demo</DemoLink>
-          </ProjectLinks> */}
-        </ProjectDescription>
-      </ProjectCard>
+            </ProjectDescription>
+          </a>
+        </ProjectCard>
+      ))}
     </ProjectPageContainer>
   )
 }

@@ -11,8 +11,11 @@ export const HeaderContainer = styled.div`
   justify-content: center;
   align-items: center;
 `
-export const HeadMainText = styled.div`
+export const HeadMainText = styled.span`
   font-size: 5vw;
+`
+export const TextContainer = styled.div`
+  display: flex;
 `
 export const HeadSubText = styled.p`
   font-size: 1rem;
@@ -22,4 +25,6 @@ export const HeadSubText = styled.p`
 `
 export const HighlightTxt = styled.span`
   color: #00fafa;
+  font-size: 5vw;
+  padding: 0 1rem 0 0;
 `

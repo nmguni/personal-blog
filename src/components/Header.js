@@ -5,13 +5,15 @@ import {
   HeadMainText,
   HeadSubText,
   HighlightTxt,
+  TextContainer,
 } from "../elements"
 
 export const Header = ({ title, subHeader }) => {
   return (
     <HeaderContainer>
-      {" "}
-      <HeadMainText>{title}</HeadMainText>
+      <TextContainer>
+        <HighlightTxt>{title}</HighlightTxt> <HeadMainText> Page</HeadMainText>
+      </TextContainer>
       <HeadSubText>{subHeader}</HeadSubText>
     </HeaderContainer>
   )

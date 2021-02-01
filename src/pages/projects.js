@@ -4,7 +4,7 @@ import Project from "../components/Project"
 import { Header } from "../components/Header"
 
 const Projects = () => {
-  const title = "Projects Page"
+  const title = "Projects "
   return (
     <Layout>
       <Header title={title} />
