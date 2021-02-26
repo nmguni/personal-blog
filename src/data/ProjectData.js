@@ -1,13 +1,14 @@
 const ProjectData = [
   {
     id: 1,
-    title: "Project one",
-    stack: "html - css - javascript",
-    alt: "this is a project",
+    title: "MLK GSAP",
+    stack: "HTML - Scss - JavaScript - GSAP animations",
+    alt: "Martin Luther King Jr",
     desc:
       "Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees",
-    img: require("../images/testImg.png"),
+    img: require("../images/Martin-Luther-King.jpg"),
     liveLink: "https://www.google.com/",
+    backgroundColor: "#D1C4E9",
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ const ProjectData = [
       "Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees",
     img: require("../images/testImg.png"),
     liveLink: "https://www.google.com/",
+    backgroundColor: "#80DEEA",
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ const ProjectData = [
       "Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees",
     img: require("../images/testImg.png"),
     liveLink: "https://www.google.com/",
+    backgroundColor: "#80CBC4",
   },
 ]
 

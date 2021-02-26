@@ -16,6 +16,8 @@ export const ProjectPageContainer = styled.div`
   flex-wrap: wrap;
 
   justify-content: center;
+
+  margin-top: 1rem;
 `
 export const Contaner = styled.div`
   padding: 1rem;
@@ -25,15 +27,15 @@ export const Contaner = styled.div`
   min-height: 100vh;
 `
 export const ProjectCard = styled.div`
-  margin: 1rem;
+  margin: 0.5rem;
 `
 export const ProjectImageWrapper = styled.div`
-  background-color: #f5f5f5;
-  width: 400px;
-  height: 280px;
+  background-color: #e0f7fa;
   border-radius: 3px;
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
 
   display: flex;
+  margin: 0 !import;
   justify-content: center;
   align-items: center;
 `

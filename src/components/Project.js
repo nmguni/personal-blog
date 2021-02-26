@@ -12,6 +12,10 @@ import {
 import ProjectData from "../data/ProjectData"
 
 const Project = () => {
+  {
+    console.log(Object.keys(ProjectData))
+  }
+
   return (
     <ProjectPageContainer>
       {ProjectData.map(x => (
@@ -19,7 +23,7 @@ const Project = () => {
           <a href={x.liveLink} target="_blank" rel="noopener noreferrer">
             <ProjectImageWrapper>
               <ProjectImg>
-                <img src={x.img} alt={x.alt} />
+                <img style={{ margin: 0 }} src={x.img} alt={x.alt} />
               </ProjectImg>
             </ProjectImageWrapper>
             <ProjectDescription>

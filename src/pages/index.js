@@ -20,12 +20,7 @@ class IndexPage extends React.Component {
             keywords={[`blog`, `gatsby`, `javascript`, `react`]}
           />
 
-          <HomeContainer>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
-            aspernatur nesciunt quasi cupiditate vel quos voluptatibus, velit
-            expedita architecto officiis rerum, saepe non quidem aliquam nisi
-            consequatur autem! Nihil, suscipit?
-          </HomeContainer>
+          <HomeContainer></HomeContainer>
         </Layout>
       </>
     )

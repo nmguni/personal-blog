@@ -24,11 +24,11 @@ export const Nav = () => {
             </Link>
           </NavItem>
           <NavMenu>
-            <NavItem>
+            {/* <NavItem>
               <Link to="/about" getProps={isActive}>
                 <NavLinks>about</NavLinks>
               </Link>
-            </NavItem>
+            </NavItem> */}
             <NavItem>
               <Link to="/blog">
                 {" "}

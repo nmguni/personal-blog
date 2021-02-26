@@ -12,7 +12,7 @@ export const Header = ({ title, subHeader }) => {
   return (
     <HeaderContainer>
       <TextContainer>
-        <HighlightTxt>{title}</HighlightTxt> <HeadMainText> Page</HeadMainText>
+        <HighlightTxt>{title}</HighlightTxt>
       </TextContainer>
       <HeadSubText>{subHeader}</HeadSubText>
     </HeaderContainer>
