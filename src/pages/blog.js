@@ -22,10 +22,12 @@ class Blog extends React.Component {
     const localSearchBlog = data.localSearchBlog
 
     const title = "blog"
+    const subHeader =
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore "
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <Header title={title} />
+        <Header subHeader={subHeader} title={title} />
         <BlogWrapper>
           {" "}
           <SEO title="All posts" />
@@ -42,12 +44,14 @@ class Blog extends React.Component {
                   >
                     <BlogTitle>{title}</BlogTitle>
                   </Link>
-                  <BlogDec
-                    dangerouslySetInnerHTML={{
-                      __html: node.frontmatter.description || node.excerpt,
-                    }}
-                  />
-                  <Difficulty>easy</Difficulty>
+                  <div style={{ display: "flex" }}>
+                    <BlogDec
+                      dangerouslySetInnerHTML={{
+                        __html: node.frontmatter.description || node.excerpt,
+                      }}
+                    />
+                    <Difficulty>easy</Difficulty>
+                  </div>
                   <BlogDate>{node.frontmatter.date}</BlogDate>
                 </BlogContainer>
               )
