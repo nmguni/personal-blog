@@ -11,7 +11,8 @@ export const BlogWrapper = styled.div`
 export const BlogContainer = styled.div`
   ${"" /* border: 2px solid #656565; */}
   font-family: "Roboto", sans-serif;
-  background-color: #eceff1;
+  ${"" /* background-color: #eceff1; */}
+  border: solid #00000030 1px;
   border-radius: 3px;
   padding: 0.5rem 1.5rem;
   width: 45rem;
@@ -21,6 +22,8 @@ export const BlogContainer = styled.div`
 
   &:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    ${"" /* background-color: #eceff1; */}
+    border: solid #fff 2px;
   }
 `
 export const BlogTitle = styled.h1`

@@ -30,9 +30,7 @@ export const ProjectCard = styled.div`
   margin: 0.5rem;
 `
 export const ProjectImageWrapper = styled.div`
-  background-color: #e0f7fa;
-  border-radius: 3px;
-  padding: 1.5rem 1.5rem 1rem 1.5rem;
+  padding: 0.1rem 0.5rem;
 
   display: flex;
   margin: 0 !import;
@@ -42,6 +40,12 @@ export const ProjectImageWrapper = styled.div`
 export const ProjectImg = styled.div`
   width: 360px;
 `
+export const Image = styled.img`
+  width: 360px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 15px 10px -15px rgb(0 0 0 / 30%);
+`
 export const ProjectDescription = styled.div`
   margin: 0;
   color: ${buttonColor};
@@ -50,6 +54,7 @@ export const ProjectDescription = styled.div`
   flex-direction: column;
   line-height: 1.2rem;
   letter-spacing: 0.9px;
+  padding: 0.2rem 0.8rem;
 `
 export const ProjectName = styled.div`
   color: #454545;
@@ -59,6 +64,7 @@ export const ProjectName = styled.div`
 `
 export const ProjectStack = styled.p`
   color: #686868;
+  font-size: 0.8rem;
   margin: 0;
 `
 export const ProjectLinks = styled.p`

@@ -2,11 +2,11 @@ import React from "react"
 import {
   ProjectPageContainer,
   ProjectImageWrapper,
-  ProjectImg,
   ProjectName,
   ProjectStack,
   ProjectDescription,
   ProjectCard,
+  Image,
 } from "../elements"
 
 import ProjectData from "../data/ProjectData"
@@ -21,11 +21,6 @@ const Project = () => {
       {ProjectData.map(x => (
         <ProjectCard key={x.key}>
           <a href={x.liveLink} target="_blank" rel="noopener noreferrer">
-            <ProjectImageWrapper>
-              <ProjectImg>
-                <img style={{ margin: 0 }} src={x.img} alt={x.alt} />
-              </ProjectImg>
-            </ProjectImageWrapper>
             <ProjectDescription>
               <ProjectName>{x.title}</ProjectName>
               <ProjectStack>{x.stack}</ProjectStack>
@@ -34,6 +29,9 @@ const Project = () => {
             <DemoLink>Live Demo</DemoLink>
           </ProjectLinks> */}
             </ProjectDescription>
+            <ProjectImageWrapper>
+              <Image style={{ margin: 0 }} src={x.img} alt={x.alt} />
+            </ProjectImageWrapper>
           </a>
         </ProjectCard>
       ))}
