@@ -35,25 +35,29 @@ n == accounts[i].length
 1 <= accounts[i][j] <= 100
 ```
 
-## ANSWER 
-
-___
+## ANSWER
 
 - - -
 
 ### **Math.max()**
 
-### **Map()**
+`Math.max()` function returns the largest of the zero or more numbers given as input parameters, or `NaN` if any parameter isn't a number and can't be converted into one.
+
+### **Map()** 
+
+The `map()` method creates a new array populated with the results of calling a provided function on every element in the calling array.
 
 ### R**educe()**
 
-[](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)The `reduce()`method executes a `reducer`function (that you provide) on each element of the array, resulting in single output value.
+[](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)The `reduce()` method executes a `reducer` function (that you provide) on each element of the array, resulting in single output value.
 
 `const reducer = (accumulator, currentValue) => accumulator + currentValue;`
 
 The `accumulator` is the value that we end with and the `reducer` is what action we will perform in order to get to one value.
 
 You must remember that a `reducer` will only return one value and one value only hence the name reduce.
+
+
 
 ```js
 var maximumWealth = function (accounts) {
