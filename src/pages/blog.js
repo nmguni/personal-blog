@@ -23,7 +23,7 @@ class Blog extends React.Component {
 
     const title = "blog"
     const subHeader =
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore "
+      "I started solving Leetcode challenges to develop my algorithm-solving skills. I'm working my way through the easy questions at the moment however I will tackle more challenging problems as I progress.  "
 
     return (
       <Layout location={this.props.location} title={siteTitle}>

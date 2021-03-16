@@ -4,10 +4,13 @@ import Project from "../components/Project"
 import { Header } from "../components/Header"
 
 const Projects = () => {
-  const title = "Projects "
+  const title = "Projects"
+  const subHeader =
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore "
+
   return (
     <Layout>
-      <Header title={title} />
+      <Header subHeader={subHeader} title={title} />
       <Project />
     </Layout>
   )

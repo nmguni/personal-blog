@@ -7,9 +7,9 @@ import { HomeContainer } from "../elements"
 
 class IndexPage extends React.Component {
   render() {
-    const title = "i'm a front-end developer"
+    const title = "Hi i'm Ndumiso"
     const subHeader =
-      " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem nemo  quae, doloribus et non "
+      " I design and develop websites & apps. Feel free to check out my work below. "
 
     return (
       <>
