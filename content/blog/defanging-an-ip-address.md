@@ -12,9 +12,7 @@ Given a valid (IPv4) IP `address`, return a defanged version of that IP address.
 
 A defanged IP address replaces every period `"."` with `"[.]"`.
 
-
-
-### Example 
+### Example
 
 ```js
 Input: address = "1.1.1.1"
@@ -26,7 +24,7 @@ Input: address = "255.100.50.0"
 Output: "255[.]100[.]50[.]0"
 ```
 
-### **Constraints:** 
+### **Constraints:**
 
 The given `address` is a valid IPv4 address.
 
@@ -66,11 +64,8 @@ console.log(defangIPaddr(address));
 // 1[.]1[.]1[.]1[.]1[.]1
 ```
 
-
-
 - - -
 
-***Sources***
-
-> 1. *[Developer Mozilla ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)*
-> 2. *[W3 Schools ](https://www.w3schools.com/jsref/jsref_replace.asp)*
+***Sources***\
+*[Developer Mozilla ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)*\
+*[W3 Schools ](https://www.w3schools.com/jsref/jsref_replace.asp)*
