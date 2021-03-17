@@ -27,11 +27,11 @@ export const Contaner = styled.div`
   min-height: 100vh;
 `
 export const ProjectCard = styled.div`
-  margin: 0.5rem;
+  margin: 1rem 0.5rem;
 `
-export const ProjectImageWrapper = styled.div`
+export const ProjectImageWrapper = styled.a`
   padding: 0.1rem 0.5rem;
-
+  box-shadow: none;
   display: flex;
   margin: 0 !import;
   justify-content: center;
@@ -45,6 +45,13 @@ export const Image = styled.img`
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 15px 10px -15px rgb(0 0 0 / 30%);
+  transition: 1s;
+  filter: grayscale(10);
+
+  &:hover {
+    filter: grayscale(0);
+    transition: 0.5s;
+  }
 `
 export const ProjectDescription = styled.div`
   margin: 0;
@@ -67,13 +74,14 @@ export const ProjectStack = styled.p`
   font-size: 0.8rem;
   margin: 0;
 `
-export const ProjectLinks = styled.p`
+export const GitHubLnk = styled.a`
   margin: 0;
-  color: red;
+  color: rgb(67, 221, 230);
+  box-shadow: none;
 `
-export const GitHubLnk = styled.p`
-  margin: 0;
-  color: red;
+export const Content = styled.div`
+  display: flex;
+  justify-content: space-between;
 `
 export const DemoLink = styled.p`
   margin: 0;

@@ -20,7 +20,7 @@ class BlogPostTemplate extends React.Component {
             title={post.frontmatter.title}
             description={post.frontmatter.description || post.excerpt}
           />
-          <h1>{post.frontmatter.title}</h1>
+          <h1 style={{ fontFamily: "roboto" }}>{post.frontmatter.title}</h1>
           <p
             style={{
               ...scale(-1 / 5),
@@ -74,6 +74,7 @@ export default BlogPostTemplate
 const BlogPostWrapper = styled.div`
   width: 45rem;
   margin: 0 auto;
+  
 `
 
 export const pageQuery = graphql`
