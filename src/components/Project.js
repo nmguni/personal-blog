@@ -1,4 +1,5 @@
 import React from "react"
+import ReactTooltip from "react-tooltip"
 import {
   ProjectPageContainer,
   ProjectImageWrapper,
@@ -29,7 +30,11 @@ const Project = () => {
             href={x.liveLink}
             target="_blank"
             rel="noopener noreferrer"
+            data-background-color="rgba(67, 221, 230, 0.11)"
+            data-text-color="black"
+            data-tip={x.tooltip}
           >
+            <ReactTooltip />
             <Image style={{ margin: 0 }} src={x.img} alt={x.alt} />
           </ProjectImageWrapper>
         </ProjectCard>
