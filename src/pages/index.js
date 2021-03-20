@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -22,9 +23,9 @@ class IndexPage extends React.Component {
           />
 
           <HomeContainer>
-            <Container href="/">Blog</Container>
-            <Container href="/">Projects</Container>
-            <Container href="/">Portfolio</Container>
+            <Container to="blog">Blog</Container>
+            <Container to="/projects">Projects</Container>
+            <Container href="https://devmguni.com">Portfolio</Container>
           </HomeContainer>
         </Layout>
       </>

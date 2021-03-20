@@ -6,7 +6,7 @@ const ProjectData = [
     alt: "Martin Luther King Jr",
     img: require("../images/Martin-Luther-King.jpg"),
     liveLink: "https://martin-luther.netlify.app/",
-    tooltip: "No Demo",
+    tooltip: "Live Demo",
     gitLink: "https://github.com/nmguni/mlk",
   },
   {
@@ -16,7 +16,7 @@ const ProjectData = [
     alt: "this is a project",
     img: require("../images/chatApp.png"),
     liveLink: "https://rick-morty-chat-app.netlify.app/",
-    tooltip: "live demo",
+    tooltip: "Live Demo",
     gitLink: "https://github.com/nmguni/-realtime-chat-app",
   },
   {
@@ -25,8 +25,8 @@ const ProjectData = [
     stack: "html - css - javascript",
     alt: "this is a project",
     img: require("../images/hacker-news.jpg"),
-    liveLink: "https://hackernews-api-clone.netlify.app/newStories",
-    tooltip: "live demo",
+    liveLink: "https://hackernews-api-clone.netlify.app/",
+    tooltip: "Live Demo",
     gitLink: "https://github.com/nmguni/hackernews-api",
   },
   {
@@ -35,8 +35,8 @@ const ProjectData = [
     stack: "html - css - javascript - GSAP",
     alt: "this is a project",
     img: require("../images/rosaParks.jpg"),
-    liveLink: "https://www.google.com/",
-    tooltip: "live demo",
+    liveLink: "",
+    tooltip: "No demo",
     gitLink: "https://github.com/nmguni/roas",
   },
   {
@@ -45,9 +45,9 @@ const ProjectData = [
     stack: "html - css - javascript",
     alt: "this is a project",
     img: require("../images/jobSearchOpen.jpg"),
-    liveLink: "https://www.google.com/",
+    liveLink: "",
     tooltip: "live demo",
-    gitLink: "https://www.google.com/",
+    gitLink: "https://github.com/nmguni/job-search",
   },
   {
     id: 6,

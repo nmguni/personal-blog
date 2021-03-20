@@ -24,11 +24,6 @@ export const Nav = () => {
             </Link>
           </NavItem>
           <NavMenu>
-            {/* <NavItem>
-              <Link to="/about" getProps={isActive}>
-                <NavLinks>about</NavLinks>
-              </Link>
-            </NavItem> */}
             <NavItem>
               <Link to="/blog">
                 {" "}
