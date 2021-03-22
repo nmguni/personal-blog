@@ -22,8 +22,12 @@ class IndexPage extends React.Component {
           />
 
           <HomeContainer>
-            <PageLink to="blog">Blog</PageLink>
-            <PageLink to="/projects">Projects</PageLink>
+            <PageLink style={{ backgroundColor: "#f3e5f5" }} to="blog">
+              Blog
+            </PageLink>
+            <PageLink style={{ backgroundColor: " #e3f2fd" }} to="/projects">
+              Projects
+            </PageLink>
             <PageLinka
               target="_blank"
               rel="noopener noreferrer"

@@ -1,10 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
-
-import { rhythm, scale } from "../utils/typography"
 import { Nav } from "./Nav"
-import { Header } from "./Header"
 
 class Layout extends React.Component {
   render() {

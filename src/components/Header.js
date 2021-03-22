@@ -3,13 +3,11 @@ import {
   HeaderContainer,
   HeaderText,
   HeadSubText,
-  HighlightTxt,
   TextContainer,
   Stack,
 } from "../elements"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { fas } from "@fortawesome/fontawesome-svg-core"
 import { faSquare } from "@fortawesome/free-solid-svg-icons"
 
 export const Header = ({ title, subHeader, stack }) => {

@@ -37,14 +37,14 @@ export const PageLink = styled(Link)`
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     transition: 0.5s;
   }
-
+  ${"" /* 
   ${PageLink}:nth-child(1) {
     background-color: #f3e5f5;
-  }
+  } */}
 
-  ${PageLink}:nth-child(2) {
+  ${"" /* ${PageLink}:nth-child(2) {
     background-color: #e3f2fd;
-  }
+  } */}
 
   color: #454545;
   font-size: 3rem;
