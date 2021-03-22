@@ -30,11 +30,6 @@ export const Nav = () => {
                 <NavLinks> blog</NavLinks>
               </Link>
             </NavItem>
-            {/* <NavItem>
-              <Link>
-                <NavLinks>resume</NavLinks>
-              </Link>
-            </NavItem> */}
             <NavItem>
               <Link to="/projects">
                 <NavLinks>projects</NavLinks>

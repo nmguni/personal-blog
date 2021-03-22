@@ -9,20 +9,18 @@ export const BlogWrapper = styled.div`
   margin-top: 1rem;
 `
 export const BlogContainer = styled.div`
-  ${"" /* border: 2px solid #656565; */}
   font-family: "Roboto", sans-serif;
-  ${"" /* background-color: #eceff1; */}
   border: solid #00000030 1px;
   border-radius: 3px;
   padding: 0.5rem 1.5rem;
-  width: 45rem;
+  width: 60%;
   margin: 0.3rem;
   transition: all 0.3s;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 
   &:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    ${"" /* background-color: #eceff1; */}
+
     border: solid #fff 2px;
   }
 `

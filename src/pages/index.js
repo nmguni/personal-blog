@@ -1,10 +1,9 @@
-import { Link } from "gatsby"
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Header } from "../components/Header"
 
-import { HomeContainer, Container } from "../elements"
+import { HomeContainer, PageLink, PageLinka } from "../elements"
 
 class IndexPage extends React.Component {
   render() {
@@ -23,9 +22,15 @@ class IndexPage extends React.Component {
           />
 
           <HomeContainer>
-            <Container to="blog">Blog</Container>
-            <Container to="/projects">Projects</Container>
-            <Container href="https://devmguni.com">Portfolio</Container>
+            <PageLink to="blog">Blog</PageLink>
+            <PageLink to="/projects">Projects</PageLink>
+            <PageLinka
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://devmguni.com"
+            >
+              Portfolio
+            </PageLinka>
           </HomeContainer>
         </Layout>
       </>

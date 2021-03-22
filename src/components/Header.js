@@ -2,7 +2,6 @@ import React from "react"
 import {
   HeaderContainer,
   HeaderText,
-  HeadMainText,
   HeadSubText,
   HighlightTxt,
   TextContainer,
@@ -17,14 +16,12 @@ export const Header = ({ title, subHeader, stack }) => {
   return (
     <HeaderContainer>
       <TextContainer>
-        <HighlightTxt>
+        <HeaderText>
           {title}
-          <span
-            style={{ color: "rgba(67, 221, 230, 0.51)", fontSize: ".6rem" }}
-          >
+          <span style={{ color: "rgba(67, 221, 230, 0.51)", fontSize: "1vw" }}>
             <FontAwesomeIcon icon={faSquare} />
           </span>
-        </HighlightTxt>
+        </HeaderText>
       </TextContainer>
       <HeadSubText>{subHeader}</HeadSubText>
       <Stack>{stack}</Stack>
