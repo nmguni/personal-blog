@@ -2,7 +2,7 @@
 path: defanging-an-ip-address
 date: 2021-03-16T21:37:10.655Z
 title: Defanging an IP Address
-description: LeetCode Question 1108.
+description: LeetCode 1108.
 ---
 ## Question
 
