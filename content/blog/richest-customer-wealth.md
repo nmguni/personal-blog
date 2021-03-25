@@ -2,7 +2,7 @@
 path: richest-customer-wealth
 date: 2021-03-16T16:31:18.890Z
 title: Richest Customer Wealth
-description: LeetCode Question 1672.
+description: LeetCode 1672.
 ---
 ## Description
 
