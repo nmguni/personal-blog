@@ -37,19 +37,21 @@ Output: [1,2,1,2]
 
 ### Constraints:
 
-**1 <= n <= 500**  
+```js
+1 <= n <= 500
 
-**nums.length == 2n** 
+nums.length == 2n
 
-**1 <= nums\[i] <= 10^3**
+1 <= nums\[i] <= 10^3
+```
 
 ## Answer
 
 - - -
 
-**Definitions**
+### **Definitions**
 
-**Slice()**
+#### **Slice()**
 
 The **`slice()`** method returns a **substr** from the **startIndex** to the **endIndex** in the **str**. `let substr = str.slice(startIndex [, endIndex ]); Code language: JavaScript (javascript)` The **startIndex** is a zero-based index at which the **`slice()`** start extraction.
 
@@ -57,7 +59,7 @@ The **endIndex** is also zero-based index before which the `slice()` ends the ex
 
 If you omit the **endIndex**, the `slice()` extracts to the end of the string.
 
-**Push()**  
+#### **Push()**  
 
 The `push()` method allows you to add one or more elements to the end of the array. 
 
