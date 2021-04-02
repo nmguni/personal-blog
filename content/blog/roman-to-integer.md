@@ -2,7 +2,7 @@
 path: roman-to-integer
 date: 2021-04-02T22:51:24.887Z
 title: Roman to Integer
-description: "LeetCode #13"
+description: LeetCode 13
 ---
 ## Question
 
