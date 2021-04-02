@@ -62,13 +62,8 @@ It is **guaranteed** that `s` is a valid roman numeral in the range `[1, 3999]`.
 - - -
 
 ```js
-
 var romanToInt = function(s) {
-
-
 const romanToNumber = {
-
-
 I: 1,
 V: 5,
 X: 10,
@@ -78,9 +73,7 @@ D: 500,
 M: 1000,
 };
 
-
 let total = 0;
-
 for(let i=0;i < s.length; i++){
     if(romanToNumber[s[i]] >= romanToNumber[s[i+1]] || !romanToNumber[s[i+1]]){
         total += romanToNumber[s[i]];
@@ -91,5 +84,4 @@ for(let i=0;i < s.length; i++){
 }
 return total;
 };
-
 ```
