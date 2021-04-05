@@ -29,7 +29,7 @@ Output: "255[.]100[.]50[.]0"
 The given `address` is a valid IPv4 address.
 
 ```js
-      var newStr = address.replace(/\./g, "[.]");
+  var newStr = address.replace(/\./g, "[.]");
 
   return newStr
     
@@ -66,6 +66,8 @@ console.log(defangIPaddr(address));
 
 - - -
 
-***Sources***\
-*[Developer Mozilla ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)*\
+### ***Sources***
+
+*[Developer Mozilla ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)*
+
 *[W3 Schools ](https://www.w3schools.com/jsref/jsref_replace.asp)*
